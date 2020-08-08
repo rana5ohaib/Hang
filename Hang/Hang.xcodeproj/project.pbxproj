@@ -13,6 +13,11 @@
 		0D680B9524DEB8260098E3C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D680B9324DEB8260098E3C9 /* Main.storyboard */; };
 		0D680B9724DEB8280098E3C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D680B9624DEB8280098E3C9 /* Assets.xcassets */; };
 		0D680B9A24DEB8280098E3C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D680B9824DEB8280098E3C9 /* LaunchScreen.storyboard */; };
+		0D680BAA24DEBA4A0098E3C9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D680BA924DEBA4A0098E3C9 /* Extensions.swift */; };
+		0D680BB024DEBEC50098E3C9 /* BPreplay.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0D680BAC24DEBEC50098E3C9 /* BPreplay.otf */; };
+		0D680BB124DEBEC50098E3C9 /* BPreplayItalics.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0D680BAD24DEBEC50098E3C9 /* BPreplayItalics.otf */; };
+		0D680BB224DEBEC50098E3C9 /* BPreplayBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0D680BAE24DEBEC50098E3C9 /* BPreplayBold.otf */; };
+		0D680BB324DEBEC50098E3C9 /* BPreplayBoldItalics.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0D680BAF24DEBEC50098E3C9 /* BPreplayBoldItalics.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		0D680B9624DEB8280098E3C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D680B9924DEB8280098E3C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D680B9B24DEB8280098E3C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D680BA924DEBA4A0098E3C9 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		0D680BAC24DEBEC50098E3C9 /* BPreplay.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BPreplay.otf; sourceTree = "<group>"; };
+		0D680BAD24DEBEC50098E3C9 /* BPreplayItalics.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BPreplayItalics.otf; sourceTree = "<group>"; };
+		0D680BAE24DEBEC50098E3C9 /* BPreplayBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BPreplayBold.otf; sourceTree = "<group>"; };
+		0D680BAF24DEBEC50098E3C9 /* BPreplayBoldItalics.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BPreplayBoldItalics.otf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,7 @@
 		0D680B8C24DEB8260098E3C9 /* Hang */ = {
 			isa = PBXGroup;
 			children = (
+				0D680BA824DEBA3D0098E3C9 /* Extensions */,
 				0D680BA124DEB8460098E3C9 /* App Delegates */,
 				0D680BA324DEB8640098E3C9 /* Controllers */,
 				0D680BA424DEB8740098E3C9 /* Storyboards */,
@@ -94,9 +105,29 @@
 		0D680BA724DEB8A60098E3C9 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				0D680BAB24DEBE7F0098E3C9 /* Fonts */,
 				0D680B9624DEB8280098E3C9 /* Assets.xcassets */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		0D680BA824DEBA3D0098E3C9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0D680BA924DEBA4A0098E3C9 /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0D680BAB24DEBE7F0098E3C9 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				0D680BAC24DEBEC50098E3C9 /* BPreplay.otf */,
+				0D680BAE24DEBEC50098E3C9 /* BPreplayBold.otf */,
+				0D680BAF24DEBEC50098E3C9 /* BPreplayBoldItalics.otf */,
+				0D680BAD24DEBEC50098E3C9 /* BPreplayItalics.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,7 +189,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D680B9A24DEB8280098E3C9 /* LaunchScreen.storyboard in Resources */,
+				0D680BB224DEBEC50098E3C9 /* BPreplayBold.otf in Resources */,
+				0D680BB324DEBEC50098E3C9 /* BPreplayBoldItalics.otf in Resources */,
 				0D680B9724DEB8280098E3C9 /* Assets.xcassets in Resources */,
+				0D680BB024DEBEC50098E3C9 /* BPreplay.otf in Resources */,
+				0D680BB124DEBEC50098E3C9 /* BPreplayItalics.otf in Resources */,
 				0D680B9524DEB8260098E3C9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -173,6 +208,7 @@
 				0D680B9224DEB8260098E3C9 /* ViewController.swift in Sources */,
 				0D680B8E24DEB8260098E3C9 /* AppDelegate.swift in Sources */,
 				0D680B9024DEB8260098E3C9 /* SceneDelegate.swift in Sources */,
+				0D680BAA24DEBA4A0098E3C9 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

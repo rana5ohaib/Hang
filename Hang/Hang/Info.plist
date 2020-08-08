@@ -60,5 +60,12 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>BPreplay</string>
+		<string>BPreplayBold</string>
+		<string>BPreplayBoldItalics</string>
+		<string>BPreplayItalics</string>
+	</array>
 </dict>
 </plist>
