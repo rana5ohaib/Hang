@@ -10,17 +10,27 @@ import UIKit
 
 class PhoneNumberViewController: UIViewController {
     
+    //================================
+    // MARK: - Outlets
+    //================================
     /// Q- Whats yours phone number Label?
     @IBOutlet weak var yourNumberLbl: UILabel!
-    
     @IBOutlet weak var termsLbl: UILabel!
+    @IBOutlet weak var nextBtn: UIButton!
+    @IBOutlet weak var phoneNumberTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setupView()
     }
+}
 
+//================================
+// MARK: - Helping functions
+//================================
+extension PhoneNumberViewController {
+    
     func setupView() {
         
         func setupLabels() {
@@ -45,5 +55,27 @@ class PhoneNumberViewController: UIViewController {
         }
         
         setupLabels()
+    }
+}
+
+//================================
+// MARK: - IBActions
+//================================
+extension PhoneNumberViewController {
+    @IBAction func nextBtnActn(sender: UIButton) {
+        performSegue(withIdentifier: "toCodeValidationSegue", sender: nil)
+    }
+}
+
+//================================
+// MARK: - Performing Segues
+//================================
+extension PhoneNumberViewController {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toCodeValidationSegue",
+            let vC = segue.destination as? CodeViewController {
+            
+            vC.phoneNumber = phoneNumberTextField.text
+        }
     }
 }
