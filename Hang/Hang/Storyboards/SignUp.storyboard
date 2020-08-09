@@ -13,10 +13,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Phone Number View Controller-->
         <scene sceneID="mhj-Bs-dXg">
             <objects>
-                <viewController id="9xb-dx-vzK" sceneMemberID="viewController">
+                <viewController id="9xb-dx-vzK" customClass="PhoneNumberViewController" customModule="Hang" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WwE-EB-HK1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -40,7 +40,7 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="jl0-V0-ipH">
                                                         <rect key="frame" x="38" y="54" width="338" height="28.5"/>
                                                         <subviews>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="TGQ-kG-QZR">
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="firstBaseline" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="TGQ-kG-QZR">
                                                                 <rect key="frame" x="154" y="0.0" width="30" height="21.5"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CYo-Ve-Lxg">
@@ -50,26 +50,31 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cjn-1w-GPD">
-                                                                        <rect key="frame" x="9" y="0.0" width="10" height="21.5"/>
+                                                                        <rect key="frame" x="9" y="2" width="10" height="19.5"/>
                                                                         <fontDescription key="fontDescription" name="BPreplay-Bold" family="BPreplay" pointSize="16"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yEi-4s-zBW">
-                                                                        <rect key="frame" x="21" y="0.0" width="9" height="21.5"/>
+                                                                        <rect key="frame" x="21" y="2" width="9" height="19.5"/>
                                                                         <fontDescription key="fontDescription" name="BPreplay-Bold" family="BPreplay" pointSize="16"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
                                                             </stackView>
-                                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="HYf-Kt-6p5">
+                                                            <progressView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="HYf-Kt-6p5">
                                                                 <rect key="frame" x="0.0" y="23.5" width="338" height="5"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="5" id="8ys-OA-QC4"/>
                                                                 </constraints>
                                                                 <color key="progressTintColor" name="Hang Blue"/>
-                                                                <color key="trackTintColor" name="Hand Gray"/>
+                                                                <color key="trackTintColor" name="Progress Bar Grey"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="2.5"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
                                                             </progressView>
                                                         </subviews>
                                                         <constraints>
@@ -137,6 +142,11 @@
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="2" id="gtO-sW-6LB"/>
                                                                 </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="1"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
                                                             </view>
                                                         </subviews>
                                                     </stackView>
@@ -204,6 +214,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6SO-AD-XDb"/>
                     </view>
+                    <connections>
+                        <outlet property="termsLbl" destination="gsy-5g-drx" id="QSJ-v0-GUR"/>
+                        <outlet property="yourNumberLbl" destination="pKx-Lp-f7n" id="UIH-5E-kip"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SXV-dJ-dwm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -215,9 +229,6 @@
         <namedColor name="Btn Background">
             <color red="0.94509803921568625" green="0.94901960784313721" blue="0.95686274509803926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="Hand Gray">
-            <color red="0.75686274509803919" green="0.75294117647058822" blue="0.78823529411764703" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="Hang Blue">
             <color red="0.058823529411764705" green="0.67843137254901964" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
@@ -226,6 +237,9 @@
         </namedColor>
         <namedColor name="Hang Grey Text">
             <color red="0.62745098039215685" green="0.62745098039215685" blue="0.62745098039215685" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Progress Bar Grey">
+            <color red="0.92941176470588238" green="0.92941176470588238" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

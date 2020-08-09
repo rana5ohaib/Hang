@@ -19,6 +19,7 @@
 		0D680BB224DEBEC50098E3C9 /* BPreplayBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0D680BAE24DEBEC50098E3C9 /* BPreplayBold.otf */; };
 		0D680BB324DEBEC50098E3C9 /* BPreplayBoldItalics.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0D680BAF24DEBEC50098E3C9 /* BPreplayBoldItalics.otf */; };
 		0D680BB524DFEBCB0098E3C9 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D680BB424DFEBCB0098E3C9 /* SignUp.storyboard */; };
+		0D680BB924E0125F0098E3C9 /* PhoneNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D680BB824E0125F0098E3C9 /* PhoneNumberViewController.swift */; };
 		FE6CEE7A97FF0304A16A14A2 /* Pods_Hang.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F0C8EC4BBDDEE497536088 /* Pods_Hang.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		0D680BAE24DEBEC50098E3C9 /* BPreplayBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BPreplayBold.otf; sourceTree = "<group>"; };
 		0D680BAF24DEBEC50098E3C9 /* BPreplayBoldItalics.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BPreplayBoldItalics.otf; sourceTree = "<group>"; };
 		0D680BB424DFEBCB0098E3C9 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
+		0D680BB824E0125F0098E3C9 /* PhoneNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberViewController.swift; sourceTree = "<group>"; };
 		55F0C8EC4BBDDEE497536088 /* Pods_Hang.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hang.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		70EF579485CAC3219E2818A1 /* Pods-Hang.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hang.debug.xcconfig"; path = "Target Support Files/Pods-Hang/Pods-Hang.debug.xcconfig"; sourceTree = "<group>"; };
 		8976D31335BDFF9C9A03678A /* Pods-Hang.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hang.release.xcconfig"; path = "Target Support Files/Pods-Hang/Pods-Hang.release.xcconfig"; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 		0D680BA324DEB8640098E3C9 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				0D680BB624E00FCC0098E3C9 /* Authentication */,
 				0D680B9124DEB8260098E3C9 /* ViewController.swift */,
 			);
 			path = Controllers;
@@ -138,6 +141,30 @@
 				0D680BAD24DEBEC50098E3C9 /* BPreplayItalics.otf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		0D680BB624E00FCC0098E3C9 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				0D680BB724E00FD50098E3C9 /* Sign up */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		0D680BB724E00FD50098E3C9 /* Sign up */ = {
+			isa = PBXGroup;
+			children = (
+				0D680BBA24E012680098E3C9 /* Phone Number */,
+			);
+			path = "Sign up";
+			sourceTree = "<group>";
+		};
+		0D680BBA24E012680098E3C9 /* Phone Number */ = {
+			isa = PBXGroup;
+			children = (
+				0D680BB824E0125F0098E3C9 /* PhoneNumberViewController.swift */,
+			);
+			path = "Phone Number";
 			sourceTree = "<group>";
 		};
 		85F1AD3D7CD5BAA9E757C166 /* Frameworks */ = {
@@ -279,6 +306,7 @@
 			files = (
 				0D680B9224DEB8260098E3C9 /* ViewController.swift in Sources */,
 				0D680B8E24DEB8260098E3C9 /* AppDelegate.swift in Sources */,
+				0D680BB924E0125F0098E3C9 /* PhoneNumberViewController.swift in Sources */,
 				0D680B9024DEB8260098E3C9 /* SceneDelegate.swift in Sources */,
 				0D680BAA24DEBA4A0098E3C9 /* StoryboardExtensions.swift in Sources */,
 			);
