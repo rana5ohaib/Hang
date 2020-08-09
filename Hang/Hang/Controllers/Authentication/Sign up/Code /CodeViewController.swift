@@ -20,6 +20,7 @@ class CodeViewController: BaseViewController {
     @IBOutlet weak var resendLbl: UILabel!
     
     // Variables
+    var countryCode: String?
     var phoneNumber: String?
     
     override func viewDidLoad() {

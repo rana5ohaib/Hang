@@ -173,3 +173,23 @@ extension UITextField {
 //        self.rightViewMode = .always
 //    }
 }
+
+
+extension UIColor {
+    
+    convenience init(r: CGFloat, g: CGFloat, b: CGFloat, a: CGFloat) {
+        self.init(
+            red     : r/255,
+            green   : g/255,
+            blue    : b/255,
+            alpha   : a)
+    }
+    
+    static let BtnBackground = UIColor(named: "Btn Background") ?? UIColor(r: 241.0, g: 241.0, b: 244.0, a: 1.0)
+    static let FieldError = UIColor(named: "Field Error") ?? UIColor(r: 255.0, g: 173.0, b: 5.0, a: 1.0)
+    static let HangBlue = UIColor(named: "Hang Blue") ?? UIColor(r: 15.0, g: 175.0, b: 255.0, a: 1.0)
+    static let HangGreyText = UIColor(named: "Hang Grey Text") ?? UIColor(r: 160.0, g: 160.0, b: 160.0, a: 1.0)
+    static let HangGrey = UIColor(named: "Hang Grey") ?? UIColor(r: 193.0, g: 192.0, b: 201.0, a: 1.0)
+    static let ProgressBarGrey = UIColor(named: "Progress Bar Grey") ?? UIColor(r: 237.0, g: 237.0, b: 237.0, a: 1.0)
+}
+

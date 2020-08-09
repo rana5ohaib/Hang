@@ -14,10 +14,12 @@ class PhoneNumberViewController: BaseViewController {
     // MARK: - Outlets
     //================================
     /// Q- Whats yours phone number Label?
+    @IBOutlet weak var countryCodeField: UITextField!
     @IBOutlet weak var yourNumberLbl: UILabel!
     @IBOutlet weak var termsLbl: UILabel!
     @IBOutlet weak var nextBtn: UIButton!
     @IBOutlet weak var phoneNumberTextField: UITextField!
+    @IBOutlet weak var phoneInfoBaseline: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,6 +58,14 @@ extension PhoneNumberViewController {
         
         setupLabels()
     }
+    
+    func validte() -> Bool {
+        if countryCodeField.text?.isEmpty ?? true ||
+            phoneNumberTextField.text?.isEmpty ?? true {
+            return false
+        }
+        return true
+    }
 }
 
 //================================
@@ -63,7 +73,11 @@ extension PhoneNumberViewController {
 //================================
 extension PhoneNumberViewController {
     @IBAction func nextBtnActn(sender: UIButton) {
-        performSegue(withIdentifier: "toCodeValidationSegue", sender: nil)
+        if validte() {
+            performSegue(withIdentifier: "toCodeValidationSegue", sender: nil)
+        } else {
+            showAlert(withMessage: "Enter a Valid Number 👀")
+        }
     }
 }
 
@@ -75,7 +89,20 @@ extension PhoneNumberViewController {
         if segue.identifier == "toCodeValidationSegue",
             let vC = segue.destination as? CodeViewController {
             
+            vC.countryCode = countryCodeField.text
             vC.phoneNumber = phoneNumberTextField.text
         }
+    }
+}
+
+//================================
+// MARK: - UITextField Delegate
+//================================
+extension PhoneNumberViewController: UITextFieldDelegate {
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        phoneInfoBaseline.backgroundColor = .HangBlue
+    }
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        phoneInfoBaseline.backgroundColor = .HangGrey
     }
 }
