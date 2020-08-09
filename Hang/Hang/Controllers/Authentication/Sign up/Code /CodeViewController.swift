@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CodeViewController: UIViewController {
+class CodeViewController: BaseViewController {
     
     //===============================
     // MARK: - Outlets
@@ -17,6 +17,7 @@ class CodeViewController: UIViewController {
     @IBOutlet weak var phoneStringLbl: UILabel!
     @IBOutlet weak var codeTextField: UITextField!
     @IBOutlet weak var nextBtn: UIButton!
+    @IBOutlet weak var resendLbl: UILabel!
     
     // Variables
     var phoneNumber: String?
@@ -49,5 +50,8 @@ extension CodeViewController {
 extension CodeViewController {
     @IBAction func nextBtnActn(sender: UIButton) {
         
+    }
+    @IBAction func backBtnActn(sender: UIButton) {
+        popController()
     }
 }

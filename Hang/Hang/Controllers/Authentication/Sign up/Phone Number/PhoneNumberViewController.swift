@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PhoneNumberViewController: UIViewController {
+class PhoneNumberViewController: BaseViewController {
     
     //================================
     // MARK: - Outlets
