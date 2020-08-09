@@ -25,10 +25,10 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="87" translatesAutoresizingMaskIntoConstraints="NO" id="3Ba-8d-iMH">
-                                        <rect key="frame" x="0.0" y="34" width="414" height="887"/>
+                                        <rect key="frame" x="0.0" y="34" width="414" height="882.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="6Xt-5x-Ibg">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="155"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="151"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hang Logo" translatesAutoresizingMaskIntoConstraints="NO" id="IAS-9j-tYK">
                                                         <rect key="frame" x="172.5" y="0.0" width="69" height="36"/>
@@ -38,25 +38,25 @@
                                                         </constraints>
                                                     </imageView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="jl0-V0-ipH">
-                                                        <rect key="frame" x="38" y="54" width="338" height="28.5"/>
+                                                        <rect key="frame" x="38" y="54" width="338" height="27"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="firstBaseline" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="TGQ-kG-QZR">
-                                                                <rect key="frame" x="154" y="0.0" width="30" height="21.5"/>
+                                                                <rect key="frame" x="154.5" y="0.0" width="29" height="20"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CYo-Ve-Lxg">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="7" height="21.5"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="10.5" height="20"/>
                                                                         <fontDescription key="fontDescription" name="BPreplay-Bold" family="BPreplay" pointSize="18"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cjn-1w-GPD">
-                                                                        <rect key="frame" x="9" y="2" width="10" height="19.5"/>
+                                                                        <rect key="frame" x="12.5" y="2" width="5.5" height="18"/>
                                                                         <fontDescription key="fontDescription" name="BPreplay-Bold" family="BPreplay" pointSize="16"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yEi-4s-zBW">
-                                                                        <rect key="frame" x="21" y="2" width="9" height="19.5"/>
+                                                                        <rect key="frame" x="20" y="2" width="9" height="18"/>
                                                                         <fontDescription key="fontDescription" name="BPreplay-Bold" family="BPreplay" pointSize="16"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
@@ -64,7 +64,7 @@
                                                                 </subviews>
                                                             </stackView>
                                                             <progressView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="HYf-Kt-6p5">
-                                                                <rect key="frame" x="0.0" y="23.5" width="338" height="5"/>
+                                                                <rect key="frame" x="0.0" y="22" width="338" height="5"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="5" id="8ys-OA-QC4"/>
                                                                 </constraints>
@@ -83,16 +83,16 @@
                                                         </constraints>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="1WW-xS-FeX">
-                                                        <rect key="frame" x="20" y="100.5" width="374" height="54.5"/>
+                                                        <rect key="frame" x="20" y="99" width="374" height="52"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's your Phone Number? 📱" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pKx-Lp-f7n">
-                                                                <rect key="frame" x="56" y="0.0" width="262" height="21.5"/>
+                                                                <rect key="frame" x="57" y="0.0" width="260" height="20"/>
                                                                 <fontDescription key="fontDescription" name="BPreplay-Bold" family="BPreplay" pointSize="18"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We use your phone number to verify your identity. " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tbv-D8-a7j">
-                                                                <rect key="frame" x="47" y="33.5" width="280" height="21"/>
+                                                                <rect key="frame" x="52.5" y="32" width="269" height="20"/>
                                                                 <fontDescription key="fontDescription" name="BPreplay-Bold" family="BPreplay" pointSize="12"/>
                                                                 <color key="textColor" name="Hang Grey Text"/>
                                                                 <nil key="highlightedColor"/>
@@ -110,7 +110,7 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="oQ9-4Z-E6y">
-                                                <rect key="frame" x="0.0" y="242" width="414" height="64.5"/>
+                                                <rect key="frame" x="0.0" y="238" width="414" height="64"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="z15-2a-xz0">
                                                         <rect key="frame" x="38" y="0.0" width="338" height="34"/>
@@ -119,22 +119,22 @@
                                                                 <rect key="frame" x="0.0" y="0.0" width="338" height="32"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aUz-bN-egj">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="9" height="32"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="8.5" height="32"/>
                                                                         <fontDescription key="fontDescription" name="BPreplay-Bold" family="BPreplay" pointSize="14"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="A3K-jh-VnS">
-                                                                        <rect key="frame" x="19" y="0.0" width="63" height="32"/>
+                                                                        <rect key="frame" x="18.5" y="0.0" width="63" height="32"/>
                                                                         <subviews>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hy4-uL-Y5j">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="4.5" height="32"/>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="(" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hy4-uL-Y5j">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="5" height="32"/>
                                                                                 <fontDescription key="fontDescription" name="BPreplay-Bold" family="BPreplay" pointSize="14"/>
                                                                                 <color key="textColor" name="Hang Grey Text"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
-                                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KZK-az-1Aw">
-                                                                                <rect key="frame" x="6.5" y="0.0" width="50" height="32"/>
+                                                                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KZK-az-1Aw">
+                                                                                <rect key="frame" x="7" y="0.0" width="50" height="32"/>
                                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <constraints>
@@ -158,8 +158,8 @@
                                                                                     <outlet property="delegate" destination="9xb-dx-vzK" id="WX0-Gb-qjl"/>
                                                                                 </connections>
                                                                             </textField>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=")" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L3r-Ah-WKw">
-                                                                                <rect key="frame" x="58.5" y="0.0" width="4.5" height="32"/>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text=")" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L3r-Ah-WKw">
+                                                                                <rect key="frame" x="59" y="0.0" width="4" height="32"/>
                                                                                 <fontDescription key="fontDescription" name="BPreplay-Bold" family="BPreplay" pointSize="14"/>
                                                                                 <color key="textColor" name="Hang Grey Text"/>
                                                                                 <nil key="highlightedColor"/>
@@ -170,7 +170,7 @@
                                                                         </constraints>
                                                                     </stackView>
                                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7hO-K0-cxV">
-                                                                        <rect key="frame" x="92" y="0.0" width="246" height="32"/>
+                                                                        <rect key="frame" x="91.5" y="0.0" width="246.5" height="32"/>
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <constraints>
@@ -178,7 +178,7 @@
                                                                         </constraints>
                                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <fontDescription key="fontDescription" name="BPreplay-Bold" family="BPreplay" pointSize="14"/>
-                                                                        <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                                         <userDefinedRuntimeAttributes>
                                                                             <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
                                                                                 <color key="value" name="Hang Grey"/>
@@ -211,7 +211,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By signing up you agree to our Terms of Service and our Privacy Policy" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gsy-5g-drx">
-                                                        <rect key="frame" x="45" y="52" width="324" height="12.5"/>
+                                                        <rect key="frame" x="49" y="52" width="316.5" height="12"/>
                                                         <fontDescription key="fontDescription" name="BPreplay-Bold" family="BPreplay" pointSize="10"/>
                                                         <color key="textColor" name="Hang Grey"/>
                                                         <nil key="highlightedColor"/>
@@ -223,11 +223,11 @@
                                                 </constraints>
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xQJ-TZ-CFp">
-                                                <rect key="frame" x="0.0" y="393.5" width="414" height="356.5"/>
+                                                <rect key="frame" x="0.0" y="389" width="414" height="356.5"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="KWn-hl-Rac">
-                                                <rect key="frame" x="0.0" y="837" width="414" height="50"/>
+                                                <rect key="frame" x="0.0" y="832.5" width="414" height="50"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kvb-Bs-fwc">
                                                         <rect key="frame" x="134" y="0.0" width="146" height="50"/>
@@ -303,10 +303,10 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="87" translatesAutoresizingMaskIntoConstraints="NO" id="hSl-JT-zAa">
-                                        <rect key="frame" x="0.0" y="34" width="414" height="933.5"/>
+                                        <rect key="frame" x="0.0" y="34" width="414" height="928.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="vJC-pg-vgr">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="201.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="197"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Pae-w3-sND">
                                                         <rect key="frame" x="14" y="0.0" width="386" height="24"/>
@@ -333,25 +333,25 @@
                                                         </constraints>
                                                     </imageView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="fOg-n6-9vg">
-                                                        <rect key="frame" x="38" y="96" width="338" height="29.5"/>
+                                                        <rect key="frame" x="38" y="96" width="338" height="28"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="firstBaseline" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="xwH-dE-SCC">
-                                                                <rect key="frame" x="154" y="0.0" width="30" height="22.5"/>
+                                                                <rect key="frame" x="154.5" y="0.0" width="29" height="21"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NJy-b8-pm2">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="7" height="22.5"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="10.5" height="21"/>
                                                                         <fontDescription key="fontDescription" name="BPreplay-Bold" family="BPreplay" pointSize="18"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5TU-W6-MBP">
-                                                                        <rect key="frame" x="9" y="2" width="10" height="20"/>
+                                                                        <rect key="frame" x="12.5" y="2" width="5.5" height="19"/>
                                                                         <fontDescription key="fontDescription" name="BPreplay-Bold" family="BPreplay" pointSize="16"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fad-V9-IyL">
-                                                                        <rect key="frame" x="21" y="2" width="9" height="20"/>
+                                                                        <rect key="frame" x="20" y="2" width="9" height="19"/>
                                                                         <fontDescription key="fontDescription" name="BPreplay-Bold" family="BPreplay" pointSize="16"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
@@ -359,7 +359,7 @@
                                                                 </subviews>
                                                             </stackView>
                                                             <progressView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.20000000298023224" translatesAutoresizingMaskIntoConstraints="NO" id="nkD-z3-W1p">
-                                                                <rect key="frame" x="0.0" y="24.5" width="338" height="5"/>
+                                                                <rect key="frame" x="0.0" y="23" width="338" height="5"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="5" id="Qfa-cD-XHh"/>
                                                                 </constraints>
@@ -378,16 +378,16 @@
                                                         </constraints>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="pt6-ZX-Kn8">
-                                                        <rect key="frame" x="20" y="143.5" width="374" height="58"/>
+                                                        <rect key="frame" x="20" y="142" width="374" height="55"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Verification Code 🔑" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VRb-81-KKu">
-                                                                <rect key="frame" x="77.5" y="0.0" width="219.5" height="23"/>
+                                                                <rect key="frame" x="81.5" y="0.0" width="211.5" height="21.5"/>
                                                                 <fontDescription key="fontDescription" name="BPreplay-Bold" family="BPreplay" pointSize="18"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We sent you a text at " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TVY-K0-PJI">
-                                                                <rect key="frame" x="126" y="35" width="122" height="23"/>
+                                                                <rect key="frame" x="129" y="33.5" width="116.5" height="21.5"/>
                                                                 <fontDescription key="fontDescription" name="BPreplay-Bold" family="BPreplay" pointSize="12"/>
                                                                 <color key="textColor" name="Hang Grey Text"/>
                                                                 <nil key="highlightedColor"/>
@@ -407,7 +407,7 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="MAZ-3C-XXW">
-                                                <rect key="frame" x="0.0" y="288.5" width="414" height="64.5"/>
+                                                <rect key="frame" x="0.0" y="284" width="414" height="64"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="CFP-WP-Sw8">
                                                         <rect key="frame" x="38" y="0.0" width="338" height="34"/>
@@ -432,6 +432,9 @@
                                                                         <real key="value" value="7"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <outlet property="delegate" destination="5wP-Zw-GP5" id="pIu-MM-lBQ"/>
+                                                                </connections>
                                                             </textField>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kn7-lu-LOS">
                                                                 <rect key="frame" x="0.0" y="32" width="338" height="2"/>
@@ -448,7 +451,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="resend in 59s" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fBZ-uD-Bjf">
-                                                        <rect key="frame" x="38" y="52" width="338" height="12.5"/>
+                                                        <rect key="frame" x="38" y="52" width="338" height="12"/>
                                                         <fontDescription key="fontDescription" name="BPreplay-Bold" family="BPreplay" pointSize="10"/>
                                                         <color key="textColor" name="Hang Grey"/>
                                                         <nil key="highlightedColor"/>
@@ -462,11 +465,11 @@
                                                 </constraints>
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PH3-Q6-GWy">
-                                                <rect key="frame" x="0.0" y="440" width="414" height="356.5"/>
+                                                <rect key="frame" x="0.0" y="435" width="414" height="356.5"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="lts-kb-xYG">
-                                                <rect key="frame" x="0.0" y="883.5" width="414" height="50"/>
+                                                <rect key="frame" x="0.0" y="878.5" width="414" height="50"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aif-bI-tpa">
                                                         <rect key="frame" x="134" y="0.0" width="146" height="50"/>
@@ -518,6 +521,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="bcy-yJ-cnT"/>
                     <connections>
+                        <outlet property="codeFieldBaseline" destination="Kn7-lu-LOS" id="7zI-7D-yYD"/>
                         <outlet property="codeTextField" destination="764-Ez-iL8" id="R2f-og-n4j"/>
                         <outlet property="nextBtn" destination="aif-bI-tpa" id="aOc-wW-aEY"/>
                         <outlet property="phoneStringLbl" destination="TVY-K0-PJI" id="5KE-Wj-D27"/>

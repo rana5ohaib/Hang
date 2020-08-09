@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class PhoneNumberViewController: BaseViewController {
     
@@ -20,6 +21,9 @@ class PhoneNumberViewController: BaseViewController {
     @IBOutlet weak var nextBtn: UIButton!
     @IBOutlet weak var phoneNumberTextField: UITextField!
     @IBOutlet weak var phoneInfoBaseline: UIView!
+    
+    // Variables
+    var authId: Int?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -74,7 +78,7 @@ extension PhoneNumberViewController {
 extension PhoneNumberViewController {
     @IBAction func nextBtnActn(sender: UIButton) {
         if validte() {
-            performSegue(withIdentifier: "toCodeValidationSegue", sender: nil)
+            getAuthID(phoneNumberTextField.text ?? "", countryCodeField .text ?? "")
         } else {
             showAlert(withMessage: "Enter a Valid Number 👀")
         }
@@ -89,6 +93,7 @@ extension PhoneNumberViewController {
         if segue.identifier == "toCodeValidationSegue",
             let vC = segue.destination as? CodeViewController {
             
+            vC.authId = authId
             vC.countryCode = countryCodeField.text
             vC.phoneNumber = phoneNumberTextField.text
         }
@@ -104,5 +109,81 @@ extension PhoneNumberViewController: UITextFieldDelegate {
     }
     func textFieldDidEndEditing(_ textField: UITextField) {
         phoneInfoBaseline.backgroundColor = .HangGrey
+    }
+}
+
+//================================
+// MARK: - Networking Calls
+//================================
+extension PhoneNumberViewController {
+    
+    func getAuthID(_ number: String, _ countryCode: String) {
+
+        if ReachabilityManager.shared.isConnected {
+            
+            let method: HTTPMethod = .post
+            let headers: HTTPHeaders? = [
+                "X-Authy-API-Key": "km7fJOO32EDzW7b4VEtJjGFYUebtH8tc"
+            ]
+            let parameters = [
+                "user[email]": "ranasohaib002@gmail.com",
+                "user[cellphone]": number,
+                "user[country_code]": countryCode,
+            ]
+            
+            let strURL = "https://api.authy.com/protected/json/users/new"
+            
+            AF.request(strURL,
+                       method: method,
+                       parameters: parameters,
+                       encoding: URLEncoding.default,
+                       headers: headers)
+                .validate()
+                .responseJSON(completionHandler: { (response) in
+                    switch response.result {
+                    case .success(let value):
+                        if let responseVal = value as? [String: Any],
+                            let user = responseVal["user"] as? [String: Any],
+                            let id = user["id"] as? Int {
+                            self.authId = id
+                            self.sendOTP(id)
+                        }
+                    case.failure:
+                        self.showAlert(withMessage: "Enter a valid number 👀")
+                    }
+                })
+        } else {
+            showAlert(withMessage: "You are not connected to internet 👀")
+        }
+    }
+    
+    func sendOTP(_ authID: Int) {
+
+        if ReachabilityManager.shared.isConnected {
+            
+            let method: HTTPMethod = .get
+            let headers: HTTPHeaders? = [
+                "X-Authy-API-Key": "km7fJOO32EDzW7b4VEtJjGFYUebtH8tc"
+            ]
+            
+            let strURL = "https://api.authy.com/protected/json/sms/\(authID)"
+            
+            AF.request(strURL,
+                       method: method,
+                       parameters: nil,
+                       encoding: URLEncoding.default,
+                       headers: headers)
+                .validate()
+                .responseJSON(completionHandler: { (response) in
+                    switch response.result {
+                    case .success(_):
+                        self.performSegue(withIdentifier: "toCodeValidationSegue", sender: nil)
+                    case.failure:
+                        self.showAlert(withMessage: "Enter a valid number 👀")
+                    }
+                })
+        } else {
+            showAlert(withMessage: "You are not connected to internet 👀")
+        }
     }
 }

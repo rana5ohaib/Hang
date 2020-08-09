@@ -22,6 +22,7 @@
 		0D680BBD24E019B60098E3C9 /* CodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D680BBC24E019B60098E3C9 /* CodeViewController.swift */; };
 		0D680BC024E027020098E3C9 /* AppRootNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D680BBF24E027020098E3C9 /* AppRootNavigationController.swift */; };
 		0D680BC224E02A120098E3C9 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D680BC124E02A120098E3C9 /* BaseViewController.swift */; };
+		0D680BC424E08D540098E3C9 /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D680BC324E08D540098E3C9 /* ReachabilityManager.swift */; };
 		FE6CEE7A97FF0304A16A14A2 /* Pods_Hang.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F0C8EC4BBDDEE497536088 /* Pods_Hang.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		0D680BBC24E019B60098E3C9 /* CodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeViewController.swift; sourceTree = "<group>"; };
 		0D680BBF24E027020098E3C9 /* AppRootNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootNavigationController.swift; sourceTree = "<group>"; };
 		0D680BC124E02A120098E3C9 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		0D680BC324E08D540098E3C9 /* ReachabilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityManager.swift; sourceTree = "<group>"; };
 		55F0C8EC4BBDDEE497536088 /* Pods_Hang.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hang.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		70EF579485CAC3219E2818A1 /* Pods-Hang.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hang.debug.xcconfig"; path = "Target Support Files/Pods-Hang/Pods-Hang.debug.xcconfig"; sourceTree = "<group>"; };
 		8976D31335BDFF9C9A03678A /* Pods-Hang.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hang.release.xcconfig"; path = "Target Support Files/Pods-Hang/Pods-Hang.release.xcconfig"; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				0D680BA824DEBA3D0098E3C9 /* Extensions */,
 				0D680BA724DEB8A60098E3C9 /* Assets */,
 				0D680B9B24DEB8280098E3C9 /* Info.plist */,
+				0D680BC324E08D540098E3C9 /* ReachabilityManager.swift */,
 			);
 			path = Hang;
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D680BC424E08D540098E3C9 /* ReachabilityManager.swift in Sources */,
 				0D680B8E24DEB8260098E3C9 /* AppDelegate.swift in Sources */,
 				0D680BB924E0125F0098E3C9 /* PhoneNumberViewController.swift in Sources */,
 				0D680BC024E027020098E3C9 /* AppRootNavigationController.swift in Sources */,
