@@ -110,6 +110,16 @@ extension PhoneNumberViewController: UITextFieldDelegate {
     func textFieldDidEndEditing(_ textField: UITextField) {
         phoneInfoBaseline.backgroundColor = .HangGrey
     }
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        if !string.isEmpty,
+            ((textField == phoneNumberTextField && !(countryCodeField.text?.isEmpty ?? true)) ||
+            (textField == countryCodeField && !(phoneNumberTextField.text?.isEmpty ?? true))) {
+            colorNextBtn(btn: nextBtn)
+        } else {
+            deColorNextBtn(btn: nextBtn)
+        }
+        return true
+    }
 }
 
 //================================

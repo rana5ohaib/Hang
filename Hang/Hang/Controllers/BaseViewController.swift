@@ -94,6 +94,16 @@ extension BaseViewController {
         
     }
     
+    func colorNextBtn(btn: UIButton) {
+        btn.backgroundColor = .HangBlue
+        btn.setTitleColor(.white, for: .normal)
+    }
+    
+    func deColorNextBtn(btn: UIButton) {
+        btn.backgroundColor = .BtnBackground
+        btn.setTitleColor(.HangGreyText, for: .normal)
+    }
+    
     func checkNotification() {
 //        if let notification = AppDefaults.getNotification() {
 //            load(.Notification(notification))
