@@ -1,7 +1,231 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9xb-dx-vzK">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <customFonts key="customFonts">
+        <array key="BPreplayBold.otf">
+            <string>BPreplay-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="mhj-Bs-dXg">
+            <objects>
+                <viewController id="9xb-dx-vzK" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WwE-EB-HK1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aCu-rK-5Ss">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="87" translatesAutoresizingMaskIntoConstraints="NO" id="3Ba-8d-iMH">
+                                        <rect key="frame" x="0.0" y="34" width="414" height="887"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="6Xt-5x-Ibg">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="155"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hang Logo" translatesAutoresizingMaskIntoConstraints="NO" id="IAS-9j-tYK">
+                                                        <rect key="frame" x="172.5" y="0.0" width="69" height="36"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="69" id="eMt-mI-P2B"/>
+                                                            <constraint firstAttribute="height" constant="36" id="fmY-8R-jeL"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="jl0-V0-ipH">
+                                                        <rect key="frame" x="38" y="54" width="338" height="28.5"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="TGQ-kG-QZR">
+                                                                <rect key="frame" x="154" y="0.0" width="30" height="21.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CYo-Ve-Lxg">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="7" height="21.5"/>
+                                                                        <fontDescription key="fontDescription" name="BPreplay-Bold" family="BPreplay" pointSize="18"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cjn-1w-GPD">
+                                                                        <rect key="frame" x="9" y="0.0" width="10" height="21.5"/>
+                                                                        <fontDescription key="fontDescription" name="BPreplay-Bold" family="BPreplay" pointSize="16"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yEi-4s-zBW">
+                                                                        <rect key="frame" x="21" y="0.0" width="9" height="21.5"/>
+                                                                        <fontDescription key="fontDescription" name="BPreplay-Bold" family="BPreplay" pointSize="16"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="HYf-Kt-6p5">
+                                                                <rect key="frame" x="0.0" y="23.5" width="338" height="5"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="5" id="8ys-OA-QC4"/>
+                                                                </constraints>
+                                                                <color key="progressTintColor" name="Hang Blue"/>
+                                                                <color key="trackTintColor" name="Hand Gray"/>
+                                                            </progressView>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="HYf-Kt-6p5" firstAttribute="leading" secondItem="jl0-V0-ipH" secondAttribute="leading" id="cdJ-0w-09V"/>
+                                                            <constraint firstAttribute="trailing" secondItem="HYf-Kt-6p5" secondAttribute="trailing" id="sFq-qU-O6C"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="1WW-xS-FeX">
+                                                        <rect key="frame" x="20" y="100.5" width="374" height="54.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's your Phone Number? 📱" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pKx-Lp-f7n">
+                                                                <rect key="frame" x="56" y="0.0" width="262" height="21.5"/>
+                                                                <fontDescription key="fontDescription" name="BPreplay-Bold" family="BPreplay" pointSize="18"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We use your phone number to verify your identity. " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tbv-D8-a7j">
+                                                                <rect key="frame" x="47" y="33.5" width="280" height="21"/>
+                                                                <fontDescription key="fontDescription" name="BPreplay-Bold" family="BPreplay" pointSize="12"/>
+                                                                <color key="textColor" name="Hang Grey Text"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="1WW-xS-FeX" secondAttribute="trailing" constant="20" id="5yb-Xk-mJK"/>
+                                                    <constraint firstAttribute="trailing" secondItem="jl0-V0-ipH" secondAttribute="trailing" constant="38" id="GRZ-zH-utR"/>
+                                                    <constraint firstItem="jl0-V0-ipH" firstAttribute="leading" secondItem="6Xt-5x-Ibg" secondAttribute="leading" constant="38" id="TyW-ZY-uNJ"/>
+                                                    <constraint firstItem="1WW-xS-FeX" firstAttribute="leading" secondItem="6Xt-5x-Ibg" secondAttribute="leading" constant="20" id="gWi-YB-fdt"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="oQ9-4Z-E6y">
+                                                <rect key="frame" x="0.0" y="242" width="414" height="64.5"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="z15-2a-xz0">
+                                                        <rect key="frame" x="38" y="0.0" width="338" height="34"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7hO-K0-cxV">
+                                                                <rect key="frame" x="0.0" y="0.0" width="338" height="32"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="32" id="mVD-DJ-jP0"/>
+                                                                </constraints>
+                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" name="BPreplay-Bold" family="BPreplay" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                                                                        <color key="value" name="Hang Grey"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                                                        <real key="value" value="7"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="rightPadding">
+                                                                        <real key="value" value="7"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </textField>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kee-YY-eHM">
+                                                                <rect key="frame" x="0.0" y="32" width="338" height="2"/>
+                                                                <color key="backgroundColor" name="Hang Grey"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="2" id="gtO-sW-6LB"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By signing up you agree to our Terms of Service and our Privacy Policy" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gsy-5g-drx">
+                                                        <rect key="frame" x="45" y="52" width="324" height="12.5"/>
+                                                        <fontDescription key="fontDescription" name="BPreplay-Bold" family="BPreplay" pointSize="10"/>
+                                                        <color key="textColor" name="Hang Grey"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="z15-2a-xz0" secondAttribute="trailing" constant="38" id="Ffu-rj-kEm"/>
+                                                    <constraint firstItem="z15-2a-xz0" firstAttribute="leading" secondItem="oQ9-4Z-E6y" secondAttribute="leading" constant="38" id="ZLt-le-9m5"/>
+                                                </constraints>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xQJ-TZ-CFp">
+                                                <rect key="frame" x="0.0" y="393.5" width="414" height="356.5"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="KWn-hl-Rac">
+                                                <rect key="frame" x="0.0" y="837" width="414" height="50"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kvb-Bs-fwc">
+                                                        <rect key="frame" x="134" y="0.0" width="146" height="50"/>
+                                                        <color key="backgroundColor" name="Btn Background"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="DER-DB-gX6"/>
+                                                            <constraint firstAttribute="width" constant="146" id="a4q-ZQ-lwc"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="BPreplay-Bold" family="BPreplay" pointSize="18"/>
+                                                        <state key="normal" title="Next">
+                                                            <color key="titleColor" name="Hang Grey Text"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="25"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="3Ba-8d-iMH" firstAttribute="height" secondItem="aCu-rK-5Ss" secondAttribute="height" priority="255" constant="-68" id="HpO-d3-GuH"/>
+                                    <constraint firstAttribute="bottom" secondItem="3Ba-8d-iMH" secondAttribute="bottom" constant="34" id="Lst-4Y-aw1"/>
+                                    <constraint firstAttribute="trailing" secondItem="3Ba-8d-iMH" secondAttribute="trailing" id="P74-R2-AT0"/>
+                                    <constraint firstItem="3Ba-8d-iMH" firstAttribute="width" secondItem="aCu-rK-5Ss" secondAttribute="width" id="fgp-Dp-8jf"/>
+                                    <constraint firstItem="3Ba-8d-iMH" firstAttribute="top" secondItem="aCu-rK-5Ss" secondAttribute="top" constant="34" id="jNC-MJ-M33"/>
+                                    <constraint firstItem="3Ba-8d-iMH" firstAttribute="leading" secondItem="aCu-rK-5Ss" secondAttribute="leading" id="ut4-ik-IHn"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="aKR-o4-iaQ"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="PQP-n2-NOx"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="aCu-rK-5Ss" firstAttribute="top" secondItem="6SO-AD-XDb" secondAttribute="top" id="8cs-68-Mc4"/>
+                            <constraint firstItem="6SO-AD-XDb" firstAttribute="trailing" secondItem="aCu-rK-5Ss" secondAttribute="trailing" id="Ycf-5n-sy2"/>
+                            <constraint firstItem="aCu-rK-5Ss" firstAttribute="leading" secondItem="6SO-AD-XDb" secondAttribute="leading" id="hTb-ay-KYk"/>
+                            <constraint firstItem="6SO-AD-XDb" firstAttribute="bottom" secondItem="aCu-rK-5Ss" secondAttribute="bottom" id="x13-aE-sMK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6SO-AD-XDb"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SXV-dJ-dwm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="115.94202898550725" y="98.4375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Hang Logo" width="81" height="37"/>
+        <namedColor name="Btn Background">
+            <color red="0.94509803921568625" green="0.94901960784313721" blue="0.95686274509803926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Hand Gray">
+            <color red="0.75686274509803919" green="0.75294117647058822" blue="0.78823529411764703" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Hang Blue">
+            <color red="0.058823529411764705" green="0.67843137254901964" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Hang Grey">
+            <color red="0.75686274509803919" green="0.75294117647058822" blue="0.78823529411764703" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Hang Grey Text">
+            <color red="0.62745098039215685" green="0.62745098039215685" blue="0.62745098039215685" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>
