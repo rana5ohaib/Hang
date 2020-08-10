@@ -4,23 +4,43 @@ PODS:
   - Kingfisher (5.14.1):
     - Kingfisher/Core (= 5.14.1)
   - Kingfisher/Core (5.14.1)
+  - PINCache (2.3)
+  - PINOperation (1.2)
+  - SnapSDK (1.6.2):
+    - SnapSDK/SCSDKBitmojiKit (= 1.6.2)
+    - SnapSDK/SCSDKCreativeKit (= 1.6.2)
+    - SnapSDK/SCSDKLoginKit (= 1.6.2)
+    - SnapSDK/SCSDKStoryKit (= 1.6.2)
+  - SnapSDK/SCSDKBitmojiKit (1.6.2):
+    - PINCache (< 3.1, >= 2.3)
+    - PINOperation (~> 1.1)
+  - SnapSDK/SCSDKCreativeKit (1.6.2)
+  - SnapSDK/SCSDKLoginKit (1.6.2)
+  - SnapSDK/SCSDKStoryKit (1.6.2)
 
 DEPENDENCIES:
   - Alamofire (~> 5.0.0-rc.3)
   - IQKeyboardManager
   - Kingfisher (~> 5.0)
+  - SnapSDK
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - IQKeyboardManager
     - Kingfisher
+    - PINCache
+    - PINOperation
+    - SnapSDK
 
 SPEC CHECKSUMS:
   Alamofire: df2f8f826963b08b9a870791ad48e07a10090b2e
   IQKeyboardManager: 3a8b9e603f8b0eeaf5f096a1f2b2cfcf121992ef
   Kingfisher: 8050bc6f7f68cbf3908bd04df7ccbac188f6d6d6
+  PINCache: ce36ed282031b92fc7733ffe831f474ff80fddc2
+  PINOperation: 3a967a927e7867e61976c6cc23e5770416449fbc
+  SnapSDK: 32174d85fb51f46ee3420e0d4dc2f983fb1ff748
 
-PODFILE CHECKSUM: ca8fc1ccecb3eebf92a0d105c77a79281ed66a4d
+PODFILE CHECKSUM: eaa2bd99d9a3fc85c2ce0022438b77520ae61b5b
 
 COCOAPODS: 1.9.3
