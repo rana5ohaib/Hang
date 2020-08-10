@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SCSDKLoginKit
 import IQKeyboardManager
 
 @UIApplicationMain
@@ -19,6 +20,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let _ = ReachabilityManager.shared.isConnected
         IQKeyboardManager.shared().isEnabled = true
         return true
+    }
+    
+    func application(_ app: UIApplication,
+                     open url: URL,
+                     options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        return SCSDKLoginClient.application(app, open: url, options: options)
     }
 
     // MARK: UISceneSession Lifecycle
@@ -37,4 +44,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 }
-

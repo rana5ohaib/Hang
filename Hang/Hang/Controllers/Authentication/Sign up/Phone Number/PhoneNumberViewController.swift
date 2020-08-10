@@ -78,7 +78,8 @@ extension PhoneNumberViewController {
 extension PhoneNumberViewController {
     @IBAction func nextBtnActn(sender: UIButton) {
         if validte() {
-            getAuthID(phoneNumberTextField.text ?? "", countryCodeField .text ?? "")
+            //getAuthID(phoneNumberTextField.text ?? "", countryCodeField .text ?? "")
+            performSegue(withIdentifier: "toCodeValidationSegue", sender: nil)
         } else {
             showAlert(withMessage: "Enter a Valid Number 👀")
         }

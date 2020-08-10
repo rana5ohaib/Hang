@@ -60,9 +60,10 @@ extension CodeViewController {
 //===============================
 extension CodeViewController {
     @IBAction func nextBtnActn(sender: UIButton) {
-        if validate(),
-            let id = authId {
-            verifyOTP(id, codeTextField.text ?? "")
+        if validate() {
+//            let id = authId {
+            //verifyOTP(id, codeTextField.text ?? "")
+            performSegue(withIdentifier: "toSnapBitmojiSegue", sender: nil)
         } else {
             showAlert(withMessage: "Enter a Valid Code 🔑")
         }

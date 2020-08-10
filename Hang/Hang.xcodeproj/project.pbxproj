@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D32E3DA24E1AEB6008BB417 /* GenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D32E3D924E1AEB6008BB417 /* GenderViewController.swift */; };
+		0D32E3DC24E1B253008BB417 /* DateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D32E3DB24E1B253008BB417 /* DateManager.swift */; };
+		0D32E3DF24E1C4D1008BB417 /* AddImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D32E3DE24E1C4D1008BB417 /* AddImagesViewController.swift */; };
+		0D32E3E224E1CB55008BB417 /* PermissionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D32E3E124E1CB55008BB417 /* PermissionsViewController.swift */; };
 		0D680B8E24DEB8260098E3C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D680B8D24DEB8260098E3C9 /* AppDelegate.swift */; };
 		0D680B9024DEB8260098E3C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D680B8F24DEB8260098E3C9 /* SceneDelegate.swift */; };
 		0D680B9524DEB8260098E3C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D680B9324DEB8260098E3C9 /* Main.storyboard */; };
@@ -28,6 +32,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D32E3D924E1AEB6008BB417 /* GenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderViewController.swift; sourceTree = "<group>"; };
+		0D32E3DB24E1B253008BB417 /* DateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateManager.swift; sourceTree = "<group>"; };
+		0D32E3DE24E1C4D1008BB417 /* AddImagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddImagesViewController.swift; sourceTree = "<group>"; };
+		0D32E3E124E1CB55008BB417 /* PermissionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsViewController.swift; sourceTree = "<group>"; };
 		0D680B8A24DEB8260098E3C9 /* Hang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hang.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D680B8D24DEB8260098E3C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D680B8F24DEB8260098E3C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +72,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D32E3D824E1AE82008BB417 /* Gender */ = {
+			isa = PBXGroup;
+			children = (
+				0D32E3D924E1AEB6008BB417 /* GenderViewController.swift */,
+			);
+			path = Gender;
+			sourceTree = "<group>";
+		};
+		0D32E3DD24E1C4B0008BB417 /* Add Images */ = {
+			isa = PBXGroup;
+			children = (
+				0D32E3DE24E1C4D1008BB417 /* AddImagesViewController.swift */,
+			);
+			path = "Add Images";
+			sourceTree = "<group>";
+		};
+		0D32E3E024E1CB3F008BB417 /* Permissions */ = {
+			isa = PBXGroup;
+			children = (
+				0D32E3E124E1CB55008BB417 /* PermissionsViewController.swift */,
+			);
+			path = Permissions;
+			sourceTree = "<group>";
+		};
 		0D680B8124DEB8260098E3C9 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +125,7 @@
 				0D680BA724DEB8A60098E3C9 /* Assets */,
 				0D680B9B24DEB8280098E3C9 /* Info.plist */,
 				0D680BC324E08D540098E3C9 /* ReachabilityManager.swift */,
+				0D32E3DB24E1B253008BB417 /* DateManager.swift */,
 			);
 			path = Hang;
 			sourceTree = "<group>";
@@ -166,6 +199,9 @@
 				0D680BBA24E012680098E3C9 /* Phone Number */,
 				0D680BBB24E0199D0098E3C9 /* Code  */,
 				0D680BC524E0A1270098E3C9 /* Snapchat */,
+				0D32E3D824E1AE82008BB417 /* Gender */,
+				0D32E3DD24E1C4B0008BB417 /* Add Images */,
+				0D32E3E024E1CB3F008BB417 /* Permissions */,
 			);
 			path = "Sign up";
 			sourceTree = "<group>";
@@ -341,11 +377,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D680BC424E08D540098E3C9 /* ReachabilityManager.swift in Sources */,
+				0D32E3DA24E1AEB6008BB417 /* GenderViewController.swift in Sources */,
+				0D32E3DF24E1C4D1008BB417 /* AddImagesViewController.swift in Sources */,
 				0D680B8E24DEB8260098E3C9 /* AppDelegate.swift in Sources */,
 				0D680BB924E0125F0098E3C9 /* PhoneNumberViewController.swift in Sources */,
 				0D680BC724E0A1410098E3C9 /* SnapchatViewController.swift in Sources */,
 				0D680BC024E027020098E3C9 /* AppRootNavigationController.swift in Sources */,
+				0D32E3E224E1CB55008BB417 /* PermissionsViewController.swift in Sources */,
 				0D680BBD24E019B60098E3C9 /* CodeViewController.swift in Sources */,
+				0D32E3DC24E1B253008BB417 /* DateManager.swift in Sources */,
 				0D680B9024DEB8260098E3C9 /* SceneDelegate.swift in Sources */,
 				0D680BC224E02A120098E3C9 /* BaseViewController.swift in Sources */,
 				0D680BAA24DEBA4A0098E3C9 /* StoryboardExtensions.swift in Sources */,
@@ -500,7 +540,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = come.sohaib.Hang;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sohaib.Hang;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -519,7 +559,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = come.sohaib.Hang;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sohaib.Hang;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

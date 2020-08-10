@@ -191,5 +191,7 @@ extension UIColor {
     static let HangGreyText = UIColor(named: "Hang Grey Text") ?? UIColor(r: 160.0, g: 160.0, b: 160.0, a: 1.0)
     static let HangGrey = UIColor(named: "Hang Grey") ?? UIColor(r: 193.0, g: 192.0, b: 201.0, a: 1.0)
     static let ProgressBarGrey = UIColor(named: "Progress Bar Grey") ?? UIColor(r: 237.0, g: 237.0, b: 237.0, a: 1.0)
+    static let SwitchOff = UIColor(named: "Switch off") ?? UIColor(r: 99.0, g: 108.0, b: 117.0, a: 1.0)
+    
 }
 

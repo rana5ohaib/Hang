@@ -16,10 +16,37 @@
 	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
+	<key>CFBundleURLSchemes</key>
+	<array>
+		<string>hangapp</string>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>itms-apps</string>
+		<string>snapchat</string>
+		<string>bitmoji-sdk</string>
+	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>SCSDKClientId</key>
+	<string>b51e8843-cd92-4d59-adab-fa2e083bd362</string>
+	<key>SCSDKRedirectUrl</key>
+	<string>hangapp://snap-kitsohaib/oauth2</string>
+	<key>SCSDKScopes</key>
+	<array>
+		<string>https://auth.snapchat.com/oauth2/api/user.external_id</string>
+		<string>https://auth.snapchat.com/oauth2/api/user.display_name</string>
+		<string>https://auth.snapchat.com/oauth2/api/user.bitmoji.avatar</string>
+	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>BPreplay</string>
+		<string>BPreplayBold</string>
+		<string>BPreplayBoldItalics</string>
+		<string>BPreplayItalics</string>
+	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -59,13 +86,6 @@
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
-	</array>
-	<key>UIAppFonts</key>
-	<array>
-		<string>BPreplay</string>
-		<string>BPreplayBold</string>
-		<string>BPreplayBoldItalics</string>
-		<string>BPreplayItalics</string>
 	</array>
 </dict>
 </plist>

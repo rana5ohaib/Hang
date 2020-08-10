@@ -104,6 +104,21 @@ extension BaseViewController {
         btn.setTitleColor(.HangGreyText, for: .normal)
     }
     
+    func makeTextFieldAndErrorLblRed(_ field: UITextField,
+                                     _ baseline: UIView,
+                                     _ errorLbl: UILabel) {
+        field.textColor = .FieldError
+        baseline.backgroundColor = .FieldError
+        errorLbl.isHidden = false
+    }
+    
+    func unMakeTextFieldAndErrorLblRed(_ field: UITextField,
+                                     _ baseline: UIView,
+                                     _ errorLbl: UILabel) {
+        field.textColor = .black
+        errorLbl.isHidden = true
+    }
+    
     func checkNotification() {
 //        if let notification = AppDefaults.getNotification() {
 //            load(.Notification(notification))

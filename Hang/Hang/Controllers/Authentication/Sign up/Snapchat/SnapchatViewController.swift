@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SCSDKLoginKit
 
 class SnapchatViewController: BaseViewController {
     
@@ -25,7 +26,7 @@ class SnapchatViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         setupView()
     }
 }
@@ -43,7 +44,7 @@ extension SnapchatViewController {
               .font: UIFont(name: "BPreplay-Bold", size: 18.0)!,
               .foregroundColor: UIColor(white: 0.0, alpha: 1.0)
             ])
-            attributedString.addAttribute(NSAttributedString.Key.underlineStyle , value: NSUnderlineStyle.thick.rawValue, range: NSRange(location: 11, length: 8))
+            attributedString.addAttribute(NSAttributedString.Key.underlineStyle , value: NSUnderlineStyle.thick.rawValue, range: NSRange(location: 12, length: 8))
             
             yourSnapLbl.attributedText = attributedString
         }
@@ -57,15 +58,51 @@ extension SnapchatViewController {
         }
         return true
     }
+    
+    func fetchSnapUserInfo() {
+        let graphQLQuery = "{me{displayName, bitmoji{avatar}}}"
+
+        let variables = ["page": "bitmoji"]
+
+        SCSDKLoginClient.fetchUserData(withQuery: graphQLQuery, variables: variables, success: { (resources: [AnyHashable: Any]?) in
+            
+            guard let resources = resources,
+                let data = resources["data"] as? [String: Any],
+                let me = data["me"] as? [String: Any] else { return }
+
+            let displayName = me["displayName"] as? String
+            var bitmojiAvatarUrl: String?
+            if let bitmoji = me["bitmoji"] as? [String: Any] {
+                bitmojiAvatarUrl = bitmoji["avatar"] as? String
+                print(bitmojiAvatarUrl)
+            }
+            
+        }, failure: { (error: Error?, isUserLoggedOut: Bool) in
+                // handle error
+        })
+    }
 }
 
 //================================
 // MARK: - IBActions
 //================================
 extension SnapchatViewController {
+    @IBAction func backBtn(_sender: UIButton) {
+        popController()
+    }
     @IBAction func nextBtnActn(sender: UIButton) {
         if validte() {
-            //getAuthID(phoneNumberTextField.text ?? "", countryCodeField .text ?? "")
+            SCSDKLoginClient.login(from: self, completion: { (success : Bool, error : Error?) in
+
+                if let error = error {
+                    print(error.localizedDescription)
+                    return
+                }
+
+                if success {
+                    self.fetchSnapUserInfo()
+                }
+            })
         } else {
             showAlert(withMessage: "Enter your snap 👀")
         }
@@ -77,12 +114,12 @@ extension SnapchatViewController {
 //================================
 extension SnapchatViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "toCodeValidationSegue",
-            let vC = segue.destination as? CodeViewController {
+        if segue.identifier == "toGenderSegueID",
+            let vC = segue.destination as? GenderViewController {
             
             vC.authId = authId
-//            vC.countryCode = countryCodeField.text
-//            vC.phoneNumber = phoneNumberTextField.text
+            vC.countryCode = countryCode
+            vC.phoneNumber = phoneNumber
         }
     }
 }
@@ -104,5 +141,25 @@ extension SnapchatViewController: UITextFieldDelegate {
             deColorNextBtn(btn: nextBtn)
         }
         return true
+    }
+}
+
+//================================
+// MARK: - Helping functions
+//================================
+extension SnapchatViewController {
+    @IBAction func loginButtonTapped(_ sender: Any) {
+        
+        SCSDKLoginClient.login(from: self, completion: { (success : Bool, error : Error?) in
+
+            if let error = error {
+                print(error.localizedDescription)
+                return
+            }
+
+            if success {
+                self.fetchSnapUserInfo()
+            }
+        })
     }
 }
