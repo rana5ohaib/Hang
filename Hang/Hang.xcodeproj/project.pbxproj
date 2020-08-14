@@ -28,6 +28,8 @@
 		0D680BC224E02A120098E3C9 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D680BC124E02A120098E3C9 /* BaseViewController.swift */; };
 		0D680BC424E08D540098E3C9 /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D680BC324E08D540098E3C9 /* ReachabilityManager.swift */; };
 		0D680BC724E0A1410098E3C9 /* SnapchatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D680BC624E0A1410098E3C9 /* SnapchatViewController.swift */; };
+		0DCB65CE24E723D200508992 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DCB65CD24E723D200508992 /* TabBar.storyboard */; };
+		0DCB65D224E736C500508992 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DCB65D124E736C500508992 /* Home.storyboard */; };
 		FE6CEE7A97FF0304A16A14A2 /* Pods_Hang.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F0C8EC4BBDDEE497536088 /* Pods_Hang.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +57,8 @@
 		0D680BC124E02A120098E3C9 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		0D680BC324E08D540098E3C9 /* ReachabilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityManager.swift; sourceTree = "<group>"; };
 		0D680BC624E0A1410098E3C9 /* SnapchatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapchatViewController.swift; sourceTree = "<group>"; };
+		0DCB65CD24E723D200508992 /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
+		0DCB65D124E736C500508992 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		55F0C8EC4BBDDEE497536088 /* Pods_Hang.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hang.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		70EF579485CAC3219E2818A1 /* Pods-Hang.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hang.debug.xcconfig"; path = "Target Support Files/Pods-Hang/Pods-Hang.debug.xcconfig"; sourceTree = "<group>"; };
 		8976D31335BDFF9C9A03678A /* Pods-Hang.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hang.release.xcconfig"; path = "Target Support Files/Pods-Hang/Pods-Hang.release.xcconfig"; sourceTree = "<group>"; };
@@ -144,6 +148,7 @@
 			children = (
 				0D680BC124E02A120098E3C9 /* BaseViewController.swift */,
 				0D680BB624E00FCC0098E3C9 /* Authentication */,
+				0DCB65D024E7369000508992 /* Home */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -225,8 +230,8 @@
 		0D680BBE24E026DE0098E3C9 /* App Root */ = {
 			isa = PBXGroup;
 			children = (
-				0D680B9324DEB8260098E3C9 /* Main.storyboard */,
-				0D680BBF24E027020098E3C9 /* AppRootNavigationController.swift */,
+				0DCB65CB24E7239800508992 /* Authentication */,
+				0DCB65CC24E723A900508992 /* Home */,
 			);
 			path = "App Root";
 			sourceTree = "<group>";
@@ -237,6 +242,31 @@
 				0D680BC624E0A1410098E3C9 /* SnapchatViewController.swift */,
 			);
 			path = Snapchat;
+			sourceTree = "<group>";
+		};
+		0DCB65CB24E7239800508992 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				0D680B9324DEB8260098E3C9 /* Main.storyboard */,
+				0D680BBF24E027020098E3C9 /* AppRootNavigationController.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		0DCB65CC24E723A900508992 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0DCB65CD24E723D200508992 /* TabBar.storyboard */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		0DCB65D024E7369000508992 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0DCB65D124E736C500508992 /* Home.storyboard */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		85F1AD3D7CD5BAA9E757C166 /* Frameworks */ = {
@@ -317,6 +347,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D680B9A24DEB8280098E3C9 /* LaunchScreen.storyboard in Resources */,
+				0DCB65D224E736C500508992 /* Home.storyboard in Resources */,
+				0DCB65CE24E723D200508992 /* TabBar.storyboard in Resources */,
 				0D680BB224DEBEC50098E3C9 /* BPreplayBold.otf in Resources */,
 				0D680BB324DEBEC50098E3C9 /* BPreplayBoldItalics.otf in Resources */,
 				0D680B9724DEB8280098E3C9 /* Assets.xcassets in Resources */,
