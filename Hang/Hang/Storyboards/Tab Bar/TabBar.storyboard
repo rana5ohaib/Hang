@@ -35,10 +35,33 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="QlY-J4-x2R">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="y13-sd-7MH" kind="relationship" relationship="rootViewController" id="a8g-KO-Spg"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HnH-q2-QFr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1874" y="629"/>
+        </scene>
+        <!--Discover-->
+        <scene sceneID="tVH-da-o20">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Discover" id="y13-sd-7MH" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="BAN-Ji-BW6"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pxp-hs-Fi0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1875" y="1073"/>
+        </scene>
+        <!--Friends-->
+        <scene sceneID="dWq-Al-Mf6">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Friends" id="Lyb-gG-aWU" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="w12-hG-PPw"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H5Z-ex-pE3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-36" y="1073"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bJw-oj-T85">
@@ -87,6 +110,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JF1-CT-HwC">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="Lyb-gG-aWU" kind="relationship" relationship="rootViewController" id="r9m-rW-eCM"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hTG-c8-cWd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -119,6 +119,12 @@ extension BaseViewController {
         errorLbl.isHidden = true
     }
     
+    func loadJoinScreen() -> ChattingTogetherViewController? {
+        let storyboard = UIStoryboard(name: "Home", bundle: nil)
+        let viewController = storyboard.instantiateViewController(identifier: "chattingTogetherSID") as? ChattingTogetherViewController
+        return viewController
+    }
+    
     func checkNotification() {
 //        if let notification = AppDefaults.getNotification() {
 //            load(.Notification(notification))

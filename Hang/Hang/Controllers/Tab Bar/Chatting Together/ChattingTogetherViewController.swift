@@ -8,22 +8,31 @@
 
 import UIKit
 
-class ChattingTogetherViewController: UIViewController {
+class ChattingTogetherViewController: BaseViewController {
     
     @IBOutlet weak var gemsBtn: UIButton!
     @IBOutlet weak var getMoreBtn: UIButton!
     @IBOutlet weak var joinBtn: UIButton!
     @IBOutlet weak var chattingTogetherTable: UITableView!
+    
+    var joinBtnColor: UIColor?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupView()
         setupTableView()
     }
 }
 
 // HELPING FUNCTIONS
 extension ChattingTogetherViewController {
+    
+    func setupView() {
+        if let color = joinBtnColor {
+            joinBtn.backgroundColor = color
+        }
+    }
     
     func setupTableView() {
         
@@ -41,11 +50,11 @@ extension ChattingTogetherViewController {
 
 // IB - Actions
 extension ChattingTogetherViewController {
-    @IBAction func joinBtnActn(_ sender: UIButton) {
-        
-    }
     @IBAction func dismissTouch(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
+    }
+    @IBAction func joinBtnActn(_ sender: UIButton) {
+        
     }
 }
 

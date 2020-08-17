@@ -16,6 +16,10 @@
 		0D5240BC24EA4FA200610841 /* ChattingTogetherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5240BB24EA4FA200610841 /* ChattingTogetherViewController.swift */; };
 		0D5240C124EA50C400610841 /* ProfileHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5240BF24EA50C400610841 /* ProfileHeaderTableViewCell.swift */; };
 		0D5240C224EA50C400610841 /* ProfileHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D5240C024EA50C400610841 /* ProfileHeaderTableViewCell.xib */; };
+		0D5240C524EA5B9D00610841 /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D5240C424EA5B9D00610841 /* Discover.storyboard */; };
+		0D5240C824EA5BCD00610841 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5240C724EA5BCD00610841 /* DiscoverViewController.swift */; };
+		0D5240CB24EA7C6800610841 /* Friends.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D5240CA24EA7C6800610841 /* Friends.storyboard */; };
+		0D5240CE24EA83E300610841 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5240CD24EA83E300610841 /* FriendsViewController.swift */; };
 		0D680B8E24DEB8260098E3C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D680B8D24DEB8260098E3C9 /* AppDelegate.swift */; };
 		0D680B9024DEB8260098E3C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D680B8F24DEB8260098E3C9 /* SceneDelegate.swift */; };
 		0D680B9524DEB8260098E3C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D680B9324DEB8260098E3C9 /* Main.storyboard */; };
@@ -53,6 +57,10 @@
 		0D5240BB24EA4FA200610841 /* ChattingTogetherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChattingTogetherViewController.swift; sourceTree = "<group>"; };
 		0D5240BF24EA50C400610841 /* ProfileHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderTableViewCell.swift; sourceTree = "<group>"; };
 		0D5240C024EA50C400610841 /* ProfileHeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileHeaderTableViewCell.xib; sourceTree = "<group>"; };
+		0D5240C424EA5B9D00610841 /* Discover.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Discover.storyboard; sourceTree = "<group>"; };
+		0D5240C724EA5BCD00610841 /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
+		0D5240CA24EA7C6800610841 /* Friends.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Friends.storyboard; sourceTree = "<group>"; };
+		0D5240CD24EA83E300610841 /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
 		0D680B8A24DEB8260098E3C9 /* Hang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hang.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D680B8D24DEB8260098E3C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D680B8F24DEB8260098E3C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -153,6 +161,38 @@
 				0D5240C024EA50C400610841 /* ProfileHeaderTableViewCell.xib */,
 			);
 			path = Header;
+			sourceTree = "<group>";
+		};
+		0D5240C324EA5B8200610841 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				0D5240C424EA5B9D00610841 /* Discover.storyboard */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		0D5240C624EA5BB800610841 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				0D5240C724EA5BCD00610841 /* DiscoverViewController.swift */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		0D5240C924EA7C5800610841 /* Friends */ = {
+			isa = PBXGroup;
+			children = (
+				0D5240CA24EA7C6800610841 /* Friends.storyboard */,
+			);
+			path = Friends;
+			sourceTree = "<group>";
+		};
+		0D5240CC24EA83D500610841 /* Friends */ = {
+			isa = PBXGroup;
+			children = (
+				0D5240CD24EA83E300610841 /* FriendsViewController.swift */,
+			);
+			path = Friends;
 			sourceTree = "<group>";
 		};
 		0D680B8124DEB8260098E3C9 = {
@@ -306,6 +346,8 @@
 			children = (
 				0D5240B624EA4F1A00610841 /* Chatting Together */,
 				0DFE0FD124E95584005F852E /* Home */,
+				0D5240C624EA5BB800610841 /* Discover */,
+				0D5240CC24EA83D500610841 /* Friends */,
 			);
 			path = "Tab Bar";
 			sourceTree = "<group>";
@@ -359,6 +401,8 @@
 			children = (
 				0DCB65CD24E723D200508992 /* TabBar.storyboard */,
 				0DFE0FD524E96F26005F852E /* Home */,
+				0D5240C324EA5B8200610841 /* Discover */,
+				0D5240C924EA7C5800610841 /* Friends */,
 			);
 			path = "Tab Bar";
 			sourceTree = "<group>";
@@ -458,7 +502,9 @@
 			files = (
 				0D680B9A24DEB8280098E3C9 /* LaunchScreen.storyboard in Resources */,
 				0DCB65D224E736C500508992 /* Home.storyboard in Resources */,
+				0D5240C524EA5B9D00610841 /* Discover.storyboard in Resources */,
 				0DFE0FD024E9349F005F852E /* MainCellTableViewCell.xib in Resources */,
+				0D5240CB24EA7C6800610841 /* Friends.storyboard in Resources */,
 				0DCB65CE24E723D200508992 /* TabBar.storyboard in Resources */,
 				0DFE0FC924E932D1005F852E /* SectionHeaderView.xib in Resources */,
 				0D680BB224DEBEC50098E3C9 /* BPreplayBold.otf in Resources */,
@@ -526,11 +572,13 @@
 				0D680BC424E08D540098E3C9 /* ReachabilityManager.swift in Sources */,
 				0D32E3DA24E1AEB6008BB417 /* GenderViewController.swift in Sources */,
 				0D32E3DF24E1C4D1008BB417 /* AddImagesViewController.swift in Sources */,
+				0D5240CE24EA83E300610841 /* FriendsViewController.swift in Sources */,
 				0D680B8E24DEB8260098E3C9 /* AppDelegate.swift in Sources */,
 				0D680BB924E0125F0098E3C9 /* PhoneNumberViewController.swift in Sources */,
 				0D680BC724E0A1410098E3C9 /* SnapchatViewController.swift in Sources */,
 				0D680BC024E027020098E3C9 /* AppRootNavigationController.swift in Sources */,
 				0D32E3E224E1CB55008BB417 /* PermissionsViewController.swift in Sources */,
+				0D5240C824EA5BCD00610841 /* DiscoverViewController.swift in Sources */,
 				0D680BBD24E019B60098E3C9 /* CodeViewController.swift in Sources */,
 				0DFE0FCF24E9349F005F852E /* MainCellTableViewCell.swift in Sources */,
 				0D5240C124EA50C400610841 /* ProfileHeaderTableViewCell.swift in Sources */,

@@ -1,41 +1,49 @@
 //
-//  HomeViewController.swift
+//  FriendsViewController.swift
 //  Hang
 //
-//  Created by Devfactori II on 8/16/20.
+//  Created by Devfactori II on 8/17/20.
 //  Copyright © 2020 Hang. All rights reserved.
 //
 
 import UIKit
 
-class HomeViewController: BaseViewController {
+class FriendsViewController: BaseViewController {
     
     @IBOutlet weak var gemsBtn: UIButton!
     @IBOutlet weak var getMoreBtn: UIButton!
     @IBOutlet weak var mainBitmojiBtnImg: UIButton!
+    @IBOutlet weak var searchTextField: UITextField!
     @IBOutlet weak var mainTableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
+        setupView()
         setupTableView()
     }
 
 }
 
-// IB Actions
-extension HomeViewController {
-    
+// IB - ACTIONS
+extension FriendsViewController {
     @IBAction func gemsBtnActn(_ sender: UIButton) {
         
     }
     @IBAction func getMoreBtnActn(_ sender: UIButton) {
         
     }
-}
+    @IBAction func cancelSearchBtn(_ sender: UIButton) {
+        searchTextField.text = ""
+    }
+ }
 
 // HELPING FUNCTIONS
-extension HomeViewController {
+extension FriendsViewController {
+    
+    func setupView() {
+        searchTextField.setIcon(#imageLiteral(resourceName: "nav_Search"))
+    }
     
     func setupTableView() {
         
@@ -49,18 +57,13 @@ extension HomeViewController {
         mainTableView.dataSource = self
         mainTableView.tableFooterView = UIView()
     }
-    
-    /// segue to chatting together screen
-    func segueToJoinScreen() {
-        performSegue(withIdentifier: "toChattingTogetherSID", sender: nil)
-    }
 }
 
 // UI - TABLE - VIEW DELEGATES
-extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
+extension FriendsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+        return 3
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
@@ -72,13 +75,13 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        20
+        10
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
         let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: SectionHeaderView.reuseID) as? SectionHeaderView
-        header?.setupHeaderForHome(section)
+        header?.setupHeaderForFriends(section)
         return header
     }
     
@@ -94,10 +97,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func contructSectionCell(_ tableView: UITableView, _ indexPath: IndexPath) -> UITableViewCell? {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: MainCellTableViewCell.reuseID) as? MainCellTableViewCell
-        cell?.setupCellForHome(indexPath.section)
-        cell?.joinBtnClosure = { [weak self] in
-            self?.segueToJoinScreen()
-        }
+        cell?.setupCellForFriends(indexPath.section)
         return cell
         
     }

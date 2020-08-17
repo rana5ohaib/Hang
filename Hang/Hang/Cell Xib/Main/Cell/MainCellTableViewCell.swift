@@ -67,4 +67,122 @@ class MainCellTableViewCell: UITableViewCell {
             statusDot.backgroundColor = .HangGrey
         }
     }
+    
+    func setupCellForDiscover(_ section: Int) {
+        
+        // common for all 3
+        statusDot.isHidden = true
+        
+        if section == 0 {
+            nameLbl.text = "Gina Rossi + 3 Others"
+            
+            statusLbl.textColor = .RowGoldenColor
+            statusLbl.text = "🌟 Featured"
+            
+            joinBtn.setTitle("Join", for: .normal)
+            joinBtn.backgroundColor = .RowGoldenColor
+            joinBtn.setTitleColor(.white, for: .normal)
+            joinBtn.borderWidth = 0.0
+            joinBtn.borderColor = .clear
+            
+            soloBtnImage.borderColor = .RowGoldenColor
+            
+            togetherBtnImage.isHidden = false
+            togetherBtnImage.backgroundColor = .RowGoldenColor
+            togetherBtnImage.borderWidth = 1.0
+            togetherBtnImage.borderColor = .white
+            togetherBtnImage.setTitle("+3", for: .normal)
+            togetherBtnImage.setImage(nil, for: .normal)
+            
+        } else if section == 1 {
+            nameLbl.text = "Gina Rossi"
+            
+            statusLbl.textColor = .HangBlue
+            statusLbl.text = "Active"
+            
+            joinBtn.setTitle("Join", for: .normal)
+            joinBtn.backgroundColor = .HangBlue
+            joinBtn.setTitleColor(.white, for: .normal)
+            joinBtn.borderWidth = 0.0
+            joinBtn.borderColor = .clear
+            
+            soloBtnImage.borderColor = .HangBlue
+            
+            togetherBtnImage.isHidden = false
+            togetherBtnImage.backgroundColor = .HangBlue
+            togetherBtnImage.borderWidth = 1.0
+            togetherBtnImage.borderColor = .white
+            togetherBtnImage.setTitle("", for: .normal)
+            togetherBtnImage.setTitleColor(.white, for: .normal)
+            togetherBtnImage.setImage(UIImage(named: "Bitmoji Sample"), for: .normal)
+            
+        } else if section == 2 {
+            nameLbl.text = "Gina Rossi"
+            
+            statusLbl.textColor = .HangGreen
+            statusLbl.text = "Online"
+            
+            joinBtn.setTitle("Follow", for: .normal)
+            joinBtn.backgroundColor = .white
+            joinBtn.setTitleColor(.HangGreen, for: .normal)
+            joinBtn.borderWidth = 1.0
+            joinBtn.borderColor = .HangGreen
+            
+            soloBtnImage.borderColor = .HangGreen
+            
+            togetherBtnImage.isHidden = true
+        }
+    }
+    
+    func setupCellForFriends(_ section: Int) {
+        
+        // comon for all 3
+        nameLbl.text = "Aldo A"
+        togetherBtnImage.isHidden = true
+        
+        
+        if section == 0 {
+            statusDot.isHidden = true
+            statusLbl.text = "@aldoa328"
+            
+            soloBtnImage.borderColor = .HangBlue
+            soloBtnImage.tintColor = .clear
+            soloBtnImage.setImage(#imageLiteral(resourceName: "Bitmoji Sample"), for: .normal)
+            
+            joinBtn.setTitle("Follow", for: .normal)
+            joinBtn.backgroundColor = .white
+            joinBtn.setTitleColor(.HangBlue, for: .normal)
+            joinBtn.borderWidth = 1.0
+            joinBtn.borderColor = .HangBlue
+            
+        } else if section == 1 {
+            statusDot.isHidden = true
+            statusLbl.text = "@aldoa328"
+            
+            soloBtnImage.borderColor = .HangBlue
+            soloBtnImage.tintColor = .clear
+            soloBtnImage.setImage(#imageLiteral(resourceName: "Bitmoji Sample"), for: .normal)
+            
+            joinBtn.setTitle("Follow", for: .normal)
+            joinBtn.backgroundColor = .white
+            joinBtn.setTitleColor(.HangBlue, for: .normal)
+            joinBtn.borderWidth = 1.0
+            joinBtn.borderColor = .HangBlue
+            
+        } else if section == 2 {
+            statusDot.isHidden = false
+            statusDot.backgroundColor = .HangGrey
+            statusLbl.text = "Offline"
+            
+            soloBtnImage.borderColor = .HangGrey
+            soloBtnImage.tintColor = .HangGrey
+            soloBtnImage.setImage(UIImage(systemName: "person.crop.circle"), for: .normal)
+            
+            joinBtn.setTitle("Add", for: .normal)
+            joinBtn.backgroundColor = .HangBlue
+            joinBtn.setTitleColor(.white, for: .normal)
+            joinBtn.borderWidth = 0.0
+            joinBtn.borderColor = .clear
+        }
+    }
 }

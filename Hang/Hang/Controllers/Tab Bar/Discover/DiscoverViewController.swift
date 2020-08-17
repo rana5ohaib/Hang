@@ -1,14 +1,14 @@
 //
-//  HomeViewController.swift
+//  DiscoverViewController.swift
 //  Hang
 //
-//  Created by Devfactori II on 8/16/20.
+//  Created by Devfactori II on 8/17/20.
 //  Copyright © 2020 Hang. All rights reserved.
 //
 
 import UIKit
 
-class HomeViewController: BaseViewController {
+class DiscoverViewController: BaseViewController {
     
     @IBOutlet weak var gemsBtn: UIButton!
     @IBOutlet weak var getMoreBtn: UIButton!
@@ -17,15 +17,14 @@ class HomeViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         setupTableView()
     }
 
 }
 
-// IB Actions
-extension HomeViewController {
-    
+// IB - ACTIONS
+extension DiscoverViewController {
     @IBAction func gemsBtnActn(_ sender: UIButton) {
         
     }
@@ -35,7 +34,7 @@ extension HomeViewController {
 }
 
 // HELPING FUNCTIONS
-extension HomeViewController {
+extension DiscoverViewController {
     
     func setupTableView() {
         
@@ -51,16 +50,24 @@ extension HomeViewController {
     }
     
     /// segue to chatting together screen
-    func segueToJoinScreen() {
-        performSegue(withIdentifier: "toChattingTogetherSID", sender: nil)
+    func segueToJoinScreen(_ section: Int) {
+        if let vC = loadJoinScreen() {
+            switch section {
+                case 0: vC.joinBtnColor = .RowGoldenColor
+                case 1: vC.joinBtnColor = .HangBlue
+                case 2: vC.joinBtnColor = .HangGreen
+                default: vC.joinBtnColor = nil
+            }
+            present(vC, animated: true, completion: nil)
+        }
     }
 }
 
 // UI - TABLE - VIEW DELEGATES
-extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
+extension DiscoverViewController: UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+        return 3
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
@@ -72,13 +79,13 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        20
+        10
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
         let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: SectionHeaderView.reuseID) as? SectionHeaderView
-        header?.setupHeaderForHome(section)
+        header?.setupHeaderForDiscover(section)
         return header
     }
     
@@ -94,9 +101,9 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func contructSectionCell(_ tableView: UITableView, _ indexPath: IndexPath) -> UITableViewCell? {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: MainCellTableViewCell.reuseID) as? MainCellTableViewCell
-        cell?.setupCellForHome(indexPath.section)
+        cell?.setupCellForDiscover(indexPath.section)
         cell?.joinBtnClosure = { [weak self] in
-            self?.segueToJoinScreen()
+            self?.segueToJoinScreen(indexPath.section)
         }
         return cell
         
