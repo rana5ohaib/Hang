@@ -2,7 +2,7 @@
 //  Extensions.swift
 //  Hang
 //
-//  Created by Devfactori II on 8/8/20.
+//  Created by Sohaib on 8/8/20.
 //  Copyright © 2020 Hang. All rights reserved.
 //
 
@@ -192,6 +192,7 @@ extension UIColor {
     static let HangGrey = UIColor(named: "Hang Grey") ?? UIColor(r: 193.0, g: 192.0, b: 201.0, a: 1.0)
     static let ProgressBarGrey = UIColor(named: "Progress Bar Grey") ?? UIColor(r: 237.0, g: 237.0, b: 237.0, a: 1.0)
     static let SwitchOff = UIColor(named: "Switch off") ?? UIColor(r: 99.0, g: 108.0, b: 117.0, a: 1.0)
-    
+    static let HangGreen = UIColor(named: "Hang Green") ?? UIColor(r: 160.0, g: 227.0, b: 194.0, a: 1.0)
+    static let HangPurple = UIColor(named: "Hang Purple") ?? UIColor(r: 160.0, g: 92.0, b: 204.0, a: 1.0)
 }
 
