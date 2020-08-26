@@ -185,4 +185,19 @@ class MainCellTableViewCell: UITableViewCell {
             joinBtn.borderColor = .clear
         }
     }
+    
+    func setupCellForProfile(_ section: Int) {
+        statusDot.isHidden = true
+        
+        statusLbl.textColor = UIColor(r: 99.0, g: 108.0, b: 117.0, a: 1.0)
+        statusLbl.text = "@someUser123"
+        
+        soloBtnImage.borderColor = .HangBlue
+        
+        joinBtn.backgroundColor = .white
+        joinBtn.borderWidth = 1.0
+        joinBtn.borderColor = .HangBlue
+        joinBtn.setTitle("Follow", for: .normal)
+        joinBtn.setTitleColor(.HangBlue, for: .normal)
+    }
 }

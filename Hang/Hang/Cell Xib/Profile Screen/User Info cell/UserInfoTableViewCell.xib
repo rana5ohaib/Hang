@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="BPreplay.otf">
+            <string>BPreplay</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="profileUserInfoCellRID" rowHeight="246" id="KGk-i7-Jjw" customClass="UserInfoTableViewCell" customModule="Hang" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="246"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="246"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="vO4-jH-l7j">
+                        <rect key="frame" x="46" y="11" width="228" height="226"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mzC-lc-nw3">
+                                <rect key="frame" x="67" y="0.0" width="94" height="94"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BII-zV-tJh">
+                                        <rect key="frame" x="0.0" y="0.0" width="94" height="94"/>
+                                        <state key="normal" image="Bitmoji Sample"/>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Verified Tick" translatesAutoresizingMaskIntoConstraints="NO" id="2s4-Gu-6mI">
+                                        <rect key="frame" x="74" y="74" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="7kQ-KE-BMm"/>
+                                            <constraint firstAttribute="width" constant="20" id="fr2-y1-Ce3"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="BII-zV-tJh" firstAttribute="top" secondItem="mzC-lc-nw3" secondAttribute="top" id="4MN-R7-RdR"/>
+                                    <constraint firstAttribute="width" constant="94" id="4Qc-G0-5Hd"/>
+                                    <constraint firstItem="BII-zV-tJh" firstAttribute="leading" secondItem="mzC-lc-nw3" secondAttribute="leading" id="5rW-4n-DSb"/>
+                                    <constraint firstAttribute="bottom" secondItem="BII-zV-tJh" secondAttribute="bottom" id="EiJ-ET-fpP"/>
+                                    <constraint firstAttribute="trailing" secondItem="2s4-Gu-6mI" secondAttribute="trailing" id="Giy-Ww-dgl"/>
+                                    <constraint firstAttribute="bottom" secondItem="2s4-Gu-6mI" secondAttribute="bottom" id="P0n-na-rB8"/>
+                                    <constraint firstAttribute="height" constant="94" id="nF8-5P-6bz"/>
+                                    <constraint firstAttribute="trailing" secondItem="BII-zV-tJh" secondAttribute="trailing" id="zHf-W3-UpD"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="4aH-1R-uwh">
+                                <rect key="frame" x="74.5" y="110" width="79.5" height="54.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Luis M" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9jv-OL-s0n">
+                                        <rect key="frame" x="3.5" y="0.0" width="72" height="28"/>
+                                        <fontDescription key="fontDescription" name="BPreplay" family="BPreplay" pointSize="24"/>
+                                        <color key="textColor" red="0.1803921568627451" green="0.1803921568627451" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@rossi281" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QNf-F7-XcK">
+                                        <rect key="frame" x="0.0" y="34" width="79.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.69411764705882351" green="0.69411764705882351" blue="0.69411764705882351" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zLD-5Y-w6h">
+                                <rect key="frame" x="0.0" y="180.5" width="228" height="45.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fUU-U3-6CA">
+                                        <rect key="frame" x="0.0" y="4" width="114" height="38"/>
+                                        <color key="backgroundColor" name="Hang Blue"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="38" id="BOn-PJ-yVE"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="BPreplay" family="BPreplay" pointSize="16"/>
+                                        <state key="normal" title="Follow">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="19"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="followBtnActn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="f6e-7h-UWG"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="💎  1,094" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I2n-4H-BSC">
+                                        <rect key="frame" x="114" y="13.5" width="114" height="19"/>
+                                        <fontDescription key="fontDescription" name="BPreplay" family="BPreplay" pointSize="16"/>
+                                        <color key="textColor" red="0.1803921568627451" green="0.1803921568627451" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="zLD-5Y-w6h" secondAttribute="trailing" id="N5K-7T-P8I"/>
+                            <constraint firstItem="zLD-5Y-w6h" firstAttribute="leading" secondItem="vO4-jH-l7j" secondAttribute="leading" id="k0v-7g-zJs"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="vO4-jH-l7j" secondAttribute="bottom" constant="9" id="HAN-13-L3O"/>
+                    <constraint firstItem="vO4-jH-l7j" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="46" id="Ihp-SV-4tL"/>
+                    <constraint firstAttribute="trailing" secondItem="vO4-jH-l7j" secondAttribute="trailing" constant="46" id="NYP-wr-ZzN"/>
+                    <constraint firstItem="vO4-jH-l7j" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="h2p-zT-kNe"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bitmojiBtnImg" destination="mzC-lc-nw3" id="tii-0n-9lM"/>
+                <outlet property="followBtn" destination="fUU-U3-6CA" id="FTb-gX-FBH"/>
+                <outlet property="nameLbl" destination="9jv-OL-s0n" id="EXe-vk-YR3"/>
+                <outlet property="scoreLbl" destination="I2n-4H-BSC" id="HUM-IO-eA1"/>
+                <outlet property="usernameLbl" destination="QNf-F7-XcK" id="gMO-FC-zVx"/>
+            </connections>
+            <point key="canvasLocation" x="140.57971014492756" y="184.82142857142856"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Bitmoji Sample" width="297" height="299"/>
+        <image name="Verified Tick" width="20" height="19"/>
+        <namedColor name="Hang Blue">
+            <color red="0.058823529411764705" green="0.67843137254901964" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

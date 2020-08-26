@@ -125,6 +125,12 @@ extension BaseViewController {
         return viewController
     }
     
+    func loadProfileScreen() -> ProfileViewController? {
+        let storyboard = UIStoryboard(name: "Profile", bundle: nil)
+        let viewController = storyboard.instantiateInitialViewController() as? ProfileViewController
+        return viewController
+    }
+    
     func checkNotification() {
 //        if let notification = AppDefaults.getNotification() {
 //            load(.Notification(notification))

@@ -35,19 +35,19 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lSP-nE-V2f">
-                                <rect key="frame" x="164.5" y="124" width="85" height="14"/>
+                                <rect key="frame" x="166" y="124" width="82.5" height="14"/>
                                 <fontDescription key="fontDescription" name="BPreplay" family="BPreplay" pointSize="12"/>
                                 <color key="textColor" name="Hang Grey"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@rossi281" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jM5-hb-qzW">
-                                <rect key="frame" x="171" y="146" width="72" height="18.5"/>
+                                <rect key="frame" x="170.5" y="146" width="73.5" height="19"/>
                                 <fontDescription key="fontDescription" name="BPreplay" family="BPreplay" pointSize="16"/>
                                 <color key="textColor" name="Hang Blue"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Friends" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8s-Xq-tWh">
-                                <rect key="frame" x="12" y="113" width="86.5" height="32"/>
+                                <rect key="frame" x="12" y="113" width="86.5" height="30.5"/>
                                 <fontDescription key="fontDescription" name="BPreplay-Bold" family="BPreplay" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -104,7 +104,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Trq-4Q-2gm">
-                                <rect key="frame" x="12" y="180.5" width="387" height="30"/>
+                                <rect key="frame" x="12" y="181" width="387" height="30"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0pJ-8l-dex">
                                         <rect key="frame" x="0.0" y="0.0" width="328" height="30"/>
@@ -130,7 +130,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1dC-mM-aHe">
-                                        <rect key="frame" x="343" y="0.0" width="44" height="30"/>
+                                        <rect key="frame" x="343" y="0.5" width="44" height="29"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="44" id="wmE-2W-VGK"/>
                                         </constraints>
@@ -145,7 +145,7 @@
                                 </subviews>
                             </stackView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EDz-96-oUi">
-                                <rect key="frame" x="0.0" y="219.5" width="414" height="642.5"/>
+                                <rect key="frame" x="0.0" y="220" width="414" height="642"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>

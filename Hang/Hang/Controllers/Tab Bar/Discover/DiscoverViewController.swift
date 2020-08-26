@@ -2,7 +2,7 @@
 //  DiscoverViewController.swift
 //  Hang
 //
-//  Created by Devfactori II on 8/17/20.
+//  Created by Sohaib on 8/17/20.
 //  Copyright © 2020 Hang. All rights reserved.
 //
 
@@ -107,6 +107,13 @@ extension DiscoverViewController: UITableViewDelegate, UITableViewDataSource {
         }
         return cell
         
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let vC = loadProfileScreen() {
+            vC.comingFromUserCell = true
+            navigationController?.pushViewController(vC, animated: true)
+        }
     }
 
 }

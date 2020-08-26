@@ -2,7 +2,7 @@
 //  HomeViewController.swift
 //  Hang
 //
-//  Created by Devfactori II on 8/16/20.
+//  Created by Sohaib on 8/16/20.
 //  Copyright © 2020 Hang. All rights reserved.
 //
 

@@ -126,10 +126,23 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Kxi-Xa-6qW">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="3he-j8-LoH" kind="relationship" relationship="rootViewController" id="ZQK-n6-iOw"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QvS-tG-vwO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="891" y="629"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="cYX-MX-zsI">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Profile" id="3he-j8-LoH" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Eex-WX-BZF"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jHH-XN-C66" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="890" y="1073"/>
         </scene>
     </scenes>
     <resources>
