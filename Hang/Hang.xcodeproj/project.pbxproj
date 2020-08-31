@@ -55,6 +55,8 @@
 		0DFE0FD024E9349F005F852E /* MainCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DFE0FCE24E9349E005F852E /* MainCellTableViewCell.xib */; };
 		0DFE0FD324E955D0005F852E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFE0FD224E955D0005F852E /* HomeViewController.swift */; };
 		0DFE6D1824F676950049752B /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFE6D1724F676950049752B /* EditProfileViewController.swift */; };
+		0DFE6D1B24F67B6D0049752B /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFE6D1A24F67B6D0049752B /* VideoViewController.swift */; };
+		0DFE6D1E24F67B850049752B /* Video.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DFE6D1D24F67B850049752B /* Video.storyboard */; };
 		FE6CEE7A97FF0304A16A14A2 /* Pods_Hang.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F0C8EC4BBDDEE497536088 /* Pods_Hang.framework */; };
 /* End PBXBuildFile section */
 
@@ -109,6 +111,8 @@
 		0DFE0FCE24E9349E005F852E /* MainCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainCellTableViewCell.xib; sourceTree = "<group>"; };
 		0DFE0FD224E955D0005F852E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		0DFE6D1724F676950049752B /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		0DFE6D1A24F67B6D0049752B /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		0DFE6D1D24F67B850049752B /* Video.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Video.storyboard; sourceTree = "<group>"; };
 		55F0C8EC4BBDDEE497536088 /* Pods_Hang.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hang.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		70EF579485CAC3219E2818A1 /* Pods-Hang.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hang.debug.xcconfig"; path = "Target Support Files/Pods-Hang/Pods-Hang.debug.xcconfig"; sourceTree = "<group>"; };
 		8976D31335BDFF9C9A03678A /* Pods-Hang.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hang.release.xcconfig"; path = "Target Support Files/Pods-Hang/Pods-Hang.release.xcconfig"; sourceTree = "<group>"; };
@@ -433,6 +437,7 @@
 				0D5240B624EA4F1A00610841 /* Chatting Together */,
 				0DFE0FD124E95584005F852E /* Home */,
 				0D5240C624EA5BB800610841 /* Discover */,
+				0DFE6D1924F67B570049752B /* Video */,
 				0D5240CC24EA83D500610841 /* Friends */,
 				0D8BBB9124EAB6FB000A9299 /* Profile */,
 			);
@@ -490,6 +495,7 @@
 				0DCB65CD24E723D200508992 /* TabBar.storyboard */,
 				0DFE0FD524E96F26005F852E /* Home */,
 				0D5240C324EA5B8200610841 /* Discover */,
+				0DFE6D1C24F67B790049752B /* Video */,
 				0D5240C924EA7C5800610841 /* Friends */,
 				0D8BBB9424EAB71D000A9299 /* Profile */,
 			);
@@ -518,6 +524,22 @@
 				0DFE6D1724F676950049752B /* EditProfileViewController.swift */,
 			);
 			path = "Edit Profile";
+			sourceTree = "<group>";
+		};
+		0DFE6D1924F67B570049752B /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				0DFE6D1A24F67B6D0049752B /* VideoViewController.swift */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		0DFE6D1C24F67B790049752B /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				0DFE6D1D24F67B850049752B /* Video.storyboard */,
+			);
+			path = Video;
 			sourceTree = "<group>";
 		};
 		85F1AD3D7CD5BAA9E757C166 /* Frameworks */ = {
@@ -603,6 +625,7 @@
 				0D972E9624EBC9F300054763 /* EmptyDataTableViewCell.xib in Resources */,
 				0D680B9A24DEB8280098E3C9 /* LaunchScreen.storyboard in Resources */,
 				0D8BBB9B24EABFD8000A9299 /* FollowersFollowingHeader.xib in Resources */,
+				0DFE6D1E24F67B850049752B /* Video.storyboard in Resources */,
 				0DCB65D224E736C500508992 /* Home.storyboard in Resources */,
 				0D5240C524EA5B9D00610841 /* Discover.storyboard in Resources */,
 				0DFE0FD024E9349F005F852E /* MainCellTableViewCell.xib in Resources */,
@@ -692,6 +715,7 @@
 				0DFE0FD324E955D0005F852E /* HomeViewController.swift in Sources */,
 				0D680B9024DEB8260098E3C9 /* SceneDelegate.swift in Sources */,
 				0DFE0FC824E932D1005F852E /* SectionHeaderView.swift in Sources */,
+				0DFE6D1B24F67B6D0049752B /* VideoViewController.swift in Sources */,
 				0D680BC224E02A120098E3C9 /* BaseViewController.swift in Sources */,
 				0D680BAA24DEBA4A0098E3C9 /* StoryboardExtensions.swift in Sources */,
 				0D8BBB8924EA9C7C000A9299 /* ProfileScreenHeaderView.swift in Sources */,

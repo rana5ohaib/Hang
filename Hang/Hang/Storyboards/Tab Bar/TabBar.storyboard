@@ -53,6 +53,16 @@
             </objects>
             <point key="canvasLocation" x="-1875" y="1073"/>
         </scene>
+        <!--Video-->
+        <scene sceneID="4Fh-Fb-Tec">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Video" id="2eV-NU-gyU" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="yDt-wj-0bb"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Js-8P-IWH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1012" y="1073"/>
+        </scene>
         <!--Friends-->
         <scene sceneID="dWq-Al-Mf6">
             <objects>
@@ -97,6 +107,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="caC-m4-0Eh">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="2eV-NU-gyU" kind="relationship" relationship="rootViewController" id="znU-UL-95e"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z11-VD-xhd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
