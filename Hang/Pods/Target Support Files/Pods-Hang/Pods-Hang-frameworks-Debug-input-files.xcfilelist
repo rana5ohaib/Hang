@@ -2,3 +2,10 @@ ${PODS_ROOT}/Target Support Files/Pods-Hang/Pods-Hang-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
 ${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework
 ${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework
+${BUILT_PRODUCTS_DIR}/PINCache/PINCache.framework
+${BUILT_PRODUCTS_DIR}/PINOperation/PINOperation.framework
+${PODS_ROOT}/SnapSDK/SCSDKBitmojiKit.framework
+${PODS_ROOT}/SnapSDK/SCSDKCoreKit.framework
+${PODS_ROOT}/SnapSDK/SCSDKCreativeKit.framework
+${PODS_ROOT}/SnapSDK/SCSDKLoginKit.framework
+${PODS_ROOT}/SnapSDK/SCSDKStoryKit.framework

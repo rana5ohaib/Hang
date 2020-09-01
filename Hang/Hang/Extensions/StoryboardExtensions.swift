@@ -2,7 +2,7 @@
 //  Extensions.swift
 //  Hang
 //
-//  Created by Devfactori II on 8/8/20.
+//  Created by Sohaib on 8/8/20.
 //  Copyright © 2020 Hang. All rights reserved.
 //
 
@@ -112,12 +112,13 @@ extension UITextField {
     
     func setIcon(_ image: UIImage) {
         
-        let iconView = UIImageView(frame:
-                      CGRect(x: 10, y: 11, width: 17, height: 15))
-        iconView.image = image
+        let iconBtn = UIButton(type: .system)
+        iconBtn.frame = CGRect(x: 10, y: 11, width: 17, height: 15)
+        iconBtn.tintColor = .HangGreyText
+        iconBtn.setImage(image, for: .normal)
         let iconContainerView: UIView = UIView(frame:
                       CGRect(x: 10, y: 0, width: 34, height: 37))
-        iconContainerView.addSubview(iconView)
+        iconContainerView.addSubview(iconBtn)
         leftView = iconContainerView
         leftViewMode = .always
         
@@ -191,5 +192,10 @@ extension UIColor {
     static let HangGreyText = UIColor(named: "Hang Grey Text") ?? UIColor(r: 160.0, g: 160.0, b: 160.0, a: 1.0)
     static let HangGrey = UIColor(named: "Hang Grey") ?? UIColor(r: 193.0, g: 192.0, b: 201.0, a: 1.0)
     static let ProgressBarGrey = UIColor(named: "Progress Bar Grey") ?? UIColor(r: 237.0, g: 237.0, b: 237.0, a: 1.0)
+    static let SwitchOff = UIColor(named: "Switch off") ?? UIColor(r: 99.0, g: 108.0, b: 117.0, a: 1.0)
+    static let HangGreen = UIColor(named: "Hang Green") ?? UIColor(r: 160.0, g: 227.0, b: 194.0, a: 1.0)
+    static let HangPurple = UIColor(named: "Hang Purple") ?? UIColor(r: 160.0, g: 92.0, b: 204.0, a: 1.0)
+    static let RowGoldenColor = UIColor(named: "Row Golden Color") ?? UIColor(r: 242.0, g: 175.0, b: 32.0, a: 1.0)
+    static let CancelButton = UIColor(named: "Cancel Button") ?? UIColor(r: 99.0, g: 108.0, b: 117.0, a: 1.0)
 }
 

@@ -2,7 +2,7 @@
 //  CodeViewController.swift
 //  Hang
 //
-//  Created by Devfactori II on 8/9/20.
+//  Created by Sohaib on 8/9/20.
 //  Copyright © 2020 Hang. All rights reserved.
 //
 
@@ -60,9 +60,12 @@ extension CodeViewController {
 //===============================
 extension CodeViewController {
     @IBAction func nextBtnActn(sender: UIButton) {
-        if let id = authId,
-            validate() {
-            verifyOTP(id, codeTextField.text ?? "")
+        if validate() {
+//            let id = authId {
+            //verifyOTP(id, codeTextField.text ?? "")
+            performSegue(withIdentifier: "toSnapBitmojiSegue", sender: nil)
+        } else {
+            showAlert(withMessage: "Enter a Valid Code 🔑")
         }
     }
     @IBAction func backBtnActn(sender: UIButton) {
@@ -79,6 +82,29 @@ extension CodeViewController: UITextFieldDelegate {
     }
     func textFieldDidEndEditing(_ textField: UITextField) {
         codeFieldBaseline.backgroundColor = .HangGrey
+    }
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        if !string.isEmpty {
+            colorNextBtn(btn: nextBtn)
+        } else {
+            deColorNextBtn(btn: nextBtn)
+        }
+        return true
+    }
+}
+
+//================================
+// MARK: - Performing Segues
+//================================
+extension CodeViewController {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toSnapBitmojiSegue",
+            let vC = segue.destination as? SnapchatViewController {
+            
+            vC.authId = authId
+            vC.countryCode = countryCode
+            vC.phoneNumber = phoneNumber
+        }
     }
 }
 
@@ -106,8 +132,8 @@ extension CodeViewController {
                 .validate()
                 .responseJSON(completionHandler: { (response) in
                     switch response.result {
-                    case .success(let value):
-                        print(value)
+                    case .success(_):
+                        self.performSegue(withIdentifier: "toSnapBitmojiSegue", sender: nil)
                     case.failure:
                         self.showAlert(withMessage: "Enter a Valid Code 🔑")
                     }

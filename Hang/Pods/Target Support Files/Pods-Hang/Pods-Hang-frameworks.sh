@@ -200,11 +200,25 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/PINCache/PINCache.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/PINOperation/PINOperation.framework"
+  install_framework "${PODS_ROOT}/SnapSDK/SCSDKBitmojiKit.framework"
+  install_framework "${PODS_ROOT}/SnapSDK/SCSDKCoreKit.framework"
+  install_framework "${PODS_ROOT}/SnapSDK/SCSDKCreativeKit.framework"
+  install_framework "${PODS_ROOT}/SnapSDK/SCSDKLoginKit.framework"
+  install_framework "${PODS_ROOT}/SnapSDK/SCSDKStoryKit.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/PINCache/PINCache.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/PINOperation/PINOperation.framework"
+  install_framework "${PODS_ROOT}/SnapSDK/SCSDKBitmojiKit.framework"
+  install_framework "${PODS_ROOT}/SnapSDK/SCSDKCoreKit.framework"
+  install_framework "${PODS_ROOT}/SnapSDK/SCSDKCreativeKit.framework"
+  install_framework "${PODS_ROOT}/SnapSDK/SCSDKLoginKit.framework"
+  install_framework "${PODS_ROOT}/SnapSDK/SCSDKStoryKit.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

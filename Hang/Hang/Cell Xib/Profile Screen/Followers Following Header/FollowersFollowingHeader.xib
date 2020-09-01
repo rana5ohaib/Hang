@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="BPreplay.otf">
+            <string>BPreplay</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="followersFollowingRID" rowHeight="76" id="KGk-i7-Jjw" customClass="FollowersFollowingHeader" customModule="Hang" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="76"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="76"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="pdq-BI-6G5">
+                        <rect key="frame" x="0.0" y="16" width="320" height="58"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="jEB-VZ-fdo">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="51"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="imP-x2-fbJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="160" height="51"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="7hl-NF-6Xl">
+                                                <rect key="frame" x="0.0" y="0.0" width="160" height="51"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HKf-ix-c8e">
+                                                        <rect key="frame" x="76" y="0.0" width="8" height="16.5"/>
+                                                        <fontDescription key="fontDescription" name="BPreplay" family="BPreplay" pointSize="14"/>
+                                                        <color key="textColor" name="Hang Grey Text"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Followers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y0P-4q-CmO">
+                                                        <rect key="frame" x="52" y="24.5" width="56" height="15.5"/>
+                                                        <fontDescription key="fontDescription" name="BPreplay" family="BPreplay" pointSize="13"/>
+                                                        <color key="textColor" red="0.1803921568627451" green="0.1803921568627451" blue="0.1803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hpO-sO-T3D">
+                                                        <rect key="frame" x="48" y="48" width="64" height="3"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="64" id="5d2-O4-KMi"/>
+                                                            <constraint firstAttribute="height" constant="3" id="mSf-xI-3gK"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tbw-un-yM4">
+                                                <rect key="frame" x="0.0" y="0.0" width="160" height="51"/>
+                                                <connections>
+                                                    <action selector="followersBtnActn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="FOs-1K-Dm3"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="7hl-NF-6Xl" firstAttribute="leading" secondItem="imP-x2-fbJ" secondAttribute="leading" id="0Ha-bK-5R7"/>
+                                            <constraint firstItem="7hl-NF-6Xl" firstAttribute="top" secondItem="imP-x2-fbJ" secondAttribute="top" id="Auz-OA-7TW"/>
+                                            <constraint firstAttribute="height" constant="51" id="HsR-fU-7Rh"/>
+                                            <constraint firstAttribute="bottom" secondItem="Tbw-un-yM4" secondAttribute="bottom" id="I5Y-q5-NjR"/>
+                                            <constraint firstItem="Tbw-un-yM4" firstAttribute="leading" secondItem="imP-x2-fbJ" secondAttribute="leading" id="ORL-hV-GSC"/>
+                                            <constraint firstAttribute="bottom" secondItem="7hl-NF-6Xl" secondAttribute="bottom" id="TEx-Z9-4ZC"/>
+                                            <constraint firstItem="Tbw-un-yM4" firstAttribute="top" secondItem="imP-x2-fbJ" secondAttribute="top" id="euk-xw-HLU"/>
+                                            <constraint firstAttribute="trailing" secondItem="Tbw-un-yM4" secondAttribute="trailing" id="l0w-HN-5kH"/>
+                                            <constraint firstAttribute="trailing" secondItem="7hl-NF-6Xl" secondAttribute="trailing" id="m8U-Ni-CmM"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="knx-3r-sV8">
+                                        <rect key="frame" x="160" y="0.0" width="160" height="51"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="kEK-DB-kb8">
+                                                <rect key="frame" x="0.0" y="0.0" width="160" height="51"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rIf-E1-JKc">
+                                                        <rect key="frame" x="72" y="0.0" width="16" height="16.5"/>
+                                                        <fontDescription key="fontDescription" name="BPreplay" family="BPreplay" pointSize="14"/>
+                                                        <color key="textColor" name="Hang Purple"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Following" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eGb-tR-Mc2">
+                                                        <rect key="frame" x="52" y="24.5" width="56" height="15.5"/>
+                                                        <fontDescription key="fontDescription" name="BPreplay" family="BPreplay" pointSize="13"/>
+                                                        <color key="textColor" red="0.18039215689999999" green="0.18039215689999999" blue="0.18039215689999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Bv-AB-UdD">
+                                                        <rect key="frame" x="48" y="48" width="64" height="3"/>
+                                                        <color key="backgroundColor" name="Hang Purple"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="3" id="Xfr-Mr-bf3"/>
+                                                            <constraint firstAttribute="width" constant="64" id="kZN-41-oxP"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mEy-xh-qW2">
+                                                <rect key="frame" x="0.0" y="0.0" width="160" height="51"/>
+                                                <connections>
+                                                    <action selector="followingBtnActn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="FXO-LE-hGF"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="mEy-xh-qW2" firstAttribute="top" secondItem="knx-3r-sV8" secondAttribute="top" id="8vo-Pf-Isf"/>
+                                            <constraint firstAttribute="trailing" secondItem="kEK-DB-kb8" secondAttribute="trailing" id="HqJ-yr-mad"/>
+                                            <constraint firstItem="kEK-DB-kb8" firstAttribute="leading" secondItem="knx-3r-sV8" secondAttribute="leading" id="OPO-w3-h9y"/>
+                                            <constraint firstAttribute="bottom" secondItem="mEy-xh-qW2" secondAttribute="bottom" id="XQY-jl-R0v"/>
+                                            <constraint firstAttribute="bottom" secondItem="kEK-DB-kb8" secondAttribute="bottom" id="Xry-Pj-8RI"/>
+                                            <constraint firstItem="mEy-xh-qW2" firstAttribute="leading" secondItem="knx-3r-sV8" secondAttribute="leading" id="Z2S-KL-LWj"/>
+                                            <constraint firstItem="kEK-DB-kb8" firstAttribute="top" secondItem="knx-3r-sV8" secondAttribute="top" id="cEY-vI-6fM"/>
+                                            <constraint firstAttribute="trailing" secondItem="mEy-xh-qW2" secondAttribute="trailing" id="vJX-C5-hIu"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v1c-cn-ihR">
+                                <rect key="frame" x="0.0" y="56" width="320" height="2"/>
+                                <color key="backgroundColor" name="Btn Background"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="y2E-4T-5C9"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="pdq-BI-6G5" secondAttribute="bottom" id="D28-ta-93g"/>
+                    <constraint firstAttribute="trailing" secondItem="pdq-BI-6G5" secondAttribute="trailing" id="KO9-PF-Ad0"/>
+                    <constraint firstItem="pdq-BI-6G5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="X3Z-aG-KKj"/>
+                    <constraint firstItem="pdq-BI-6G5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="o11-US-J1P"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="followersLineView" destination="hpO-sO-T3D" id="234-eL-atB"/>
+                <outlet property="followingLineView" destination="7Bv-AB-UdD" id="ngP-Jg-P20"/>
+            </connections>
+            <point key="canvasLocation" x="95.652173913043484" y="90.401785714285708"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="Btn Background">
+            <color red="0.94509803921568625" green="0.94901960784313721" blue="0.95686274509803926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Hang Grey Text">
+            <color red="0.62745098039215685" green="0.62745098039215685" blue="0.62745098039215685" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Hang Purple">
+            <color red="0.62745098039215685" green="0.36078431372549019" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

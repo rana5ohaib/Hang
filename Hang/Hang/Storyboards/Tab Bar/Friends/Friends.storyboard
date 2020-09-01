@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bfw-8Q-Jx1">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="BPreplay.otf">
+            <string>BPreplay</string>
+        </array>
+        <array key="BPreplayBold.otf">
+            <string>BPreplay-Bold</string>
+        </array>
+        <array key="BPreplayBoldItalics.otf">
+            <string>BPreplay-BoldItalic</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Friends View Controller-->
+        <scene sceneID="6tu-E6-maI">
+            <objects>
+                <viewController id="bfw-8Q-Jx1" customClass="FriendsViewController" customModule="Hang" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="G8M-LW-t5X">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hang Logo" translatesAutoresizingMaskIntoConstraints="NO" id="wwd-47-40g">
+                                <rect key="frame" x="172.5" y="78" width="69" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="69" id="flC-uJ-S5d"/>
+                                    <constraint firstAttribute="height" constant="36" id="laG-tc-1JC"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lSP-nE-V2f">
+                                <rect key="frame" x="166" y="124" width="82.5" height="14"/>
+                                <fontDescription key="fontDescription" name="BPreplay" family="BPreplay" pointSize="12"/>
+                                <color key="textColor" name="Hang Grey"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@rossi281" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jM5-hb-qzW">
+                                <rect key="frame" x="170.5" y="146" width="73.5" height="19"/>
+                                <fontDescription key="fontDescription" name="BPreplay" family="BPreplay" pointSize="16"/>
+                                <color key="textColor" name="Hang Blue"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Friends" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8s-Xq-tWh">
+                                <rect key="frame" x="12" y="113" width="86.5" height="30.5"/>
+                                <fontDescription key="fontDescription" name="BPreplay-Bold" family="BPreplay" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O0e-lo-ZA1">
+                                <rect key="frame" x="353" y="68" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="9Eh-BB-qWO"/>
+                                    <constraint firstAttribute="height" constant="40" id="D13-xK-jmm"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="Bitmoji Sample"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kgk-o5-CbA">
+                                <rect key="frame" x="345" y="116" width="54" height="24"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="54" id="XcA-eC-rhp"/>
+                                    <constraint firstAttribute="height" constant="24" id="yIJ-bb-4EU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BPreplay-BoldItalic" family="BPreplay" pointSize="16"/>
+                                <state key="normal" title="💎 77">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="gemsBtnActn:" destination="bfw-8Q-Jx1" eventType="touchUpInside" id="uAv-BA-QVj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E93-Zd-npy">
+                                <rect key="frame" x="333" y="142" width="79" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="dHS-TG-f32"/>
+                                    <constraint firstAttribute="width" constant="79" id="ldZ-pz-T5B"/>
+                                </constraints>
+                                <state key="normal" image="Get more"/>
+                                <connections>
+                                    <action selector="getMoreBtnActn:" destination="bfw-8Q-Jx1" eventType="touchUpInside" id="d0C-2P-WFS"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Trq-4Q-2gm">
+                                <rect key="frame" x="12" y="181" width="387" height="30"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0pJ-8l-dex">
+                                        <rect key="frame" x="0.0" y="0.0" width="328" height="30"/>
+                                        <color key="backgroundColor" name="Btn Background"/>
+                                        <color key="tintColor" name="Hang Blue"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="svp-bb-dlb"/>
+                                        </constraints>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="BPreplay" family="BPreplay" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                                                <color key="value" name="Hang Grey Text"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="leftImageIcon" value="nav_Search"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1dC-mM-aHe">
+                                        <rect key="frame" x="343" y="0.5" width="44" height="29"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="44" id="wmE-2W-VGK"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="BPreplay-Bold" family="BPreplay" pointSize="14"/>
+                                        <state key="normal" title="Cancel">
+                                            <color key="titleColor" name="Cancel Button"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="cancelSearchBtn:" destination="bfw-8Q-Jx1" eventType="touchUpInside" id="VKm-yY-6iM"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EDz-96-oUi">
+                                <rect key="frame" x="0.0" y="220" width="414" height="642"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Kgk-o5-CbA" firstAttribute="top" secondItem="O0e-lo-ZA1" secondAttribute="bottom" constant="8" id="2CA-RL-r2b"/>
+                            <constraint firstItem="wwd-47-40g" firstAttribute="centerX" secondItem="LXv-Z5-vpz" secondAttribute="centerX" id="4e9-lr-t1S"/>
+                            <constraint firstItem="O0e-lo-ZA1" firstAttribute="top" secondItem="LXv-Z5-vpz" secondAttribute="top" constant="24" id="5Am-Ub-MwW"/>
+                            <constraint firstItem="LXv-Z5-vpz" firstAttribute="trailing" secondItem="E93-Zd-npy" secondAttribute="trailing" constant="2" id="5aQ-a1-y1c"/>
+                            <constraint firstItem="EDz-96-oUi" firstAttribute="leading" secondItem="LXv-Z5-vpz" secondAttribute="leading" id="6n7-F3-tbT"/>
+                            <constraint firstItem="lSP-nE-V2f" firstAttribute="centerX" secondItem="LXv-Z5-vpz" secondAttribute="centerX" id="9c5-7b-wZl"/>
+                            <constraint firstItem="LXv-Z5-vpz" firstAttribute="trailing" secondItem="Trq-4Q-2gm" secondAttribute="trailing" constant="15" id="9ng-2k-uiX"/>
+                            <constraint firstItem="lSP-nE-V2f" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="h8s-Xq-tWh" secondAttribute="trailing" constant="4" id="AOq-qs-KpU"/>
+                            <constraint firstItem="jM5-hb-qzW" firstAttribute="centerX" secondItem="LXv-Z5-vpz" secondAttribute="centerX" id="Bwd-nQ-HST"/>
+                            <constraint firstItem="Trq-4Q-2gm" firstAttribute="top" secondItem="jM5-hb-qzW" secondAttribute="bottom" constant="16" id="CyF-bQ-V66"/>
+                            <constraint firstItem="EDz-96-oUi" firstAttribute="top" secondItem="Trq-4Q-2gm" secondAttribute="bottom" constant="9" id="ETa-3g-CfE"/>
+                            <constraint firstItem="E93-Zd-npy" firstAttribute="top" secondItem="Kgk-o5-CbA" secondAttribute="bottom" constant="2" id="GBu-nj-bAK"/>
+                            <constraint firstItem="h8s-Xq-tWh" firstAttribute="leading" secondItem="LXv-Z5-vpz" secondAttribute="leading" constant="12" id="IyM-Ky-cCY"/>
+                            <constraint firstItem="Kgk-o5-CbA" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="jM5-hb-qzW" secondAttribute="trailing" constant="4" id="OvF-Rb-Kj4"/>
+                            <constraint firstItem="lSP-nE-V2f" firstAttribute="top" secondItem="wwd-47-40g" secondAttribute="bottom" constant="10" id="Rw1-Zf-hvB"/>
+                            <constraint firstItem="LXv-Z5-vpz" firstAttribute="bottom" secondItem="EDz-96-oUi" secondAttribute="bottom" id="SLr-YR-bGK"/>
+                            <constraint firstItem="jM5-hb-qzW" firstAttribute="top" secondItem="lSP-nE-V2f" secondAttribute="bottom" constant="8" id="U6w-p3-cEb"/>
+                            <constraint firstItem="Kgk-o5-CbA" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="lSP-nE-V2f" secondAttribute="trailing" constant="4" id="WqW-lm-sh1"/>
+                            <constraint firstItem="LXv-Z5-vpz" firstAttribute="trailing" secondItem="Kgk-o5-CbA" secondAttribute="trailing" constant="15" id="ZTD-jQ-Hah"/>
+                            <constraint firstItem="h8s-Xq-tWh" firstAttribute="top" secondItem="LXv-Z5-vpz" secondAttribute="top" constant="69" id="aDx-oI-Fyh"/>
+                            <constraint firstItem="wwd-47-40g" firstAttribute="top" secondItem="LXv-Z5-vpz" secondAttribute="top" constant="34" id="aJD-tz-O5g"/>
+                            <constraint firstItem="jM5-hb-qzW" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="h8s-Xq-tWh" secondAttribute="trailing" constant="4" id="c9W-cR-vxZ"/>
+                            <constraint firstItem="LXv-Z5-vpz" firstAttribute="trailing" secondItem="O0e-lo-ZA1" secondAttribute="trailing" constant="21" id="l9I-PK-hJ1"/>
+                            <constraint firstItem="LXv-Z5-vpz" firstAttribute="trailing" secondItem="EDz-96-oUi" secondAttribute="trailing" id="sf1-q2-kDd"/>
+                            <constraint firstItem="Trq-4Q-2gm" firstAttribute="leading" secondItem="LXv-Z5-vpz" secondAttribute="leading" constant="12" id="yT2-Dt-ZKA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LXv-Z5-vpz"/>
+                    </view>
+                    <connections>
+                        <outlet property="gemsBtn" destination="Kgk-o5-CbA" id="Kty-sx-89r"/>
+                        <outlet property="getMoreBtn" destination="E93-Zd-npy" id="pzm-7b-gBL"/>
+                        <outlet property="mainBitmojiBtnImg" destination="O0e-lo-ZA1" id="IWN-au-BKL"/>
+                        <outlet property="mainTableView" destination="EDz-96-oUi" id="gnD-ww-8GY"/>
+                        <outlet property="searchTextField" destination="0pJ-8l-dex" id="spj-4T-o6I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jNj-r4-JMb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-174" y="73"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Bitmoji Sample" width="297" height="299"/>
+        <image name="Get more" width="78" height="15"/>
+        <image name="Hang Logo" width="81" height="37"/>
+        <image name="nav_Search" width="23" height="21"/>
+        <namedColor name="Btn Background">
+            <color red="0.94509803921568625" green="0.94901960784313721" blue="0.95686274509803926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Cancel Button">
+            <color red="0.38823529411764707" green="0.42352941176470588" blue="0.45882352941176469" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Hang Blue">
+            <color red="0.058823529411764705" green="0.67843137254901964" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Hang Grey">
+            <color red="0.75686274509803919" green="0.75294117647058822" blue="0.78823529411764703" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Hang Grey Text">
+            <color red="0.62745098039215685" green="0.62745098039215685" blue="0.62745098039215685" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
