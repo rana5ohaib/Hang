@@ -2,7 +2,7 @@
 //  PhoneNumberViewController.swift
 //  Hang
 //
-//  Created by Devfactori II on 8/9/20.
+//  Created by Sohaib on 8/9/20.
 //  Copyright © 2020 Hang. All rights reserved.
 //
 
@@ -78,7 +78,8 @@ extension PhoneNumberViewController {
 extension PhoneNumberViewController {
     @IBAction func nextBtnActn(sender: UIButton) {
         if validte() {
-            getAuthID(phoneNumberTextField.text ?? "", countryCodeField .text ?? "")
+            //getAuthID(phoneNumberTextField.text ?? "", countryCodeField .text ?? "")
+            performSegue(withIdentifier: "toCodeValidationSegue", sender: nil)
         } else {
             showAlert(withMessage: "Enter a Valid Number 👀")
         }
@@ -109,6 +110,16 @@ extension PhoneNumberViewController: UITextFieldDelegate {
     }
     func textFieldDidEndEditing(_ textField: UITextField) {
         phoneInfoBaseline.backgroundColor = .HangGrey
+    }
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        if !string.isEmpty,
+            ((textField == phoneNumberTextField && !(countryCodeField.text?.isEmpty ?? true)) ||
+            (textField == countryCodeField && !(phoneNumberTextField.text?.isEmpty ?? true))) {
+            colorNextBtn(btn: nextBtn)
+        } else {
+            deColorNextBtn(btn: nextBtn)
+        }
+        return true
     }
 }
 

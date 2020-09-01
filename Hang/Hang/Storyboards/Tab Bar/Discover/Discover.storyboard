@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Rhm-me-7Pb">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="BPreplayBold.otf">
+            <string>BPreplay-Bold</string>
+        </array>
+        <array key="BPreplayBoldItalics.otf">
+            <string>BPreplay-BoldItalic</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Discover View Controller-->
+        <scene sceneID="cvx-Nb-8rw">
+            <objects>
+                <viewController id="Rhm-me-7Pb" customClass="DiscoverViewController" customModule="Hang" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="X5v-Es-PWr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hang Logo" translatesAutoresizingMaskIntoConstraints="NO" id="WaI-Ch-fU2">
+                                <rect key="frame" x="172.5" y="78" width="69" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="EBA-sq-FqO"/>
+                                    <constraint firstAttribute="width" constant="69" id="Jfb-Ns-BE8"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discover" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m1F-mp-316">
+                                <rect key="frame" x="12" y="113" width="102.5" height="32"/>
+                                <fontDescription key="fontDescription" name="BPreplay-Bold" family="BPreplay" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UFf-UM-f2x">
+                                <rect key="frame" x="353" y="68" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="G88-Tw-1PP"/>
+                                    <constraint firstAttribute="width" constant="40" id="Tib-sm-n87"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="Bitmoji Sample"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OFb-FU-Bjl">
+                                <rect key="frame" x="345" y="116" width="54" height="24"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="awt-2l-RLx"/>
+                                    <constraint firstAttribute="width" constant="54" id="ikp-Du-gzm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BPreplay-BoldItalic" family="BPreplay" pointSize="16"/>
+                                <state key="normal" title="💎 77">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="gemsBtnActn:" destination="Rhm-me-7Pb" eventType="touchUpInside" id="SZ8-Bm-2P7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O04-dU-4Ix">
+                                <rect key="frame" x="333" y="142" width="79" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Rl4-DI-Gp7"/>
+                                    <constraint firstAttribute="width" constant="79" id="iDk-Pg-aXN"/>
+                                </constraints>
+                                <state key="normal" image="Get more"/>
+                                <connections>
+                                    <action selector="getMoreBtnActn:" destination="Rhm-me-7Pb" eventType="touchUpInside" id="UwA-U4-79l"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FWJ-O1-3HW">
+                                <rect key="frame" x="0.0" y="170" width="414" height="692"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="m1F-mp-316" firstAttribute="leading" secondItem="5yA-24-abz" secondAttribute="leading" constant="12" id="1Om-L6-Pth"/>
+                            <constraint firstItem="5yA-24-abz" firstAttribute="trailing" secondItem="OFb-FU-Bjl" secondAttribute="trailing" constant="15" id="3z8-Ue-Fmg"/>
+                            <constraint firstItem="WaI-Ch-fU2" firstAttribute="centerX" secondItem="5yA-24-abz" secondAttribute="centerX" id="5RO-pn-qQm"/>
+                            <constraint firstItem="O04-dU-4Ix" firstAttribute="top" secondItem="OFb-FU-Bjl" secondAttribute="bottom" constant="2" id="62P-fP-inc"/>
+                            <constraint firstItem="WaI-Ch-fU2" firstAttribute="top" secondItem="5yA-24-abz" secondAttribute="top" constant="34" id="9bs-jc-dik"/>
+                            <constraint firstItem="5yA-24-abz" firstAttribute="trailing" secondItem="O04-dU-4Ix" secondAttribute="trailing" constant="2" id="CbK-wo-oKp"/>
+                            <constraint firstItem="OFb-FU-Bjl" firstAttribute="top" secondItem="UFf-UM-f2x" secondAttribute="bottom" constant="8" id="DW9-0t-UIG"/>
+                            <constraint firstItem="5yA-24-abz" firstAttribute="trailing" secondItem="FWJ-O1-3HW" secondAttribute="trailing" id="IIs-gc-vML"/>
+                            <constraint firstItem="5yA-24-abz" firstAttribute="trailing" secondItem="UFf-UM-f2x" secondAttribute="trailing" constant="21" id="Owf-me-g3y"/>
+                            <constraint firstItem="UFf-UM-f2x" firstAttribute="top" secondItem="5yA-24-abz" secondAttribute="top" constant="24" id="Rdz-9Y-RQZ"/>
+                            <constraint firstItem="FWJ-O1-3HW" firstAttribute="top" secondItem="O04-dU-4Ix" secondAttribute="bottom" constant="8" id="k8o-fm-zpo"/>
+                            <constraint firstItem="m1F-mp-316" firstAttribute="top" secondItem="5yA-24-abz" secondAttribute="top" constant="69" id="nAn-5Q-QeT"/>
+                            <constraint firstItem="FWJ-O1-3HW" firstAttribute="leading" secondItem="5yA-24-abz" secondAttribute="leading" id="s7w-Ax-udo"/>
+                            <constraint firstItem="5yA-24-abz" firstAttribute="bottom" secondItem="FWJ-O1-3HW" secondAttribute="bottom" id="yxL-Jc-Wyw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5yA-24-abz"/>
+                    </view>
+                    <connections>
+                        <outlet property="gemsBtn" destination="OFb-FU-Bjl" id="XUh-sZ-fCn"/>
+                        <outlet property="getMoreBtn" destination="O04-dU-4Ix" id="eXX-jo-Qi2"/>
+                        <outlet property="mainBitmojiBtnImg" destination="UFf-UM-f2x" id="EOv-Wg-IV6"/>
+                        <outlet property="mainTableView" destination="FWJ-O1-3HW" id="uU8-Rd-3XS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fqj-0N-l5h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="218.84057971014494" y="63.616071428571423"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Bitmoji Sample" width="297" height="299"/>
+        <image name="Get more" width="78" height="15"/>
+        <image name="Hang Logo" width="81" height="37"/>
+    </resources>
+</document>

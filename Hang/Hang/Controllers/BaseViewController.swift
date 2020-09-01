@@ -2,7 +2,7 @@
 //  BaseViewController.swift
 //  Hang
 //
-//  Created by Devfactori II on 8/9/20.
+//  Created by Sohaib on 8/9/20.
 //  Copyright © 2020 Hang. All rights reserved.
 //
 
@@ -92,6 +92,43 @@ extension BaseViewController {
         }))
         self.present(alert, animated: true)
         
+    }
+    
+    func colorNextBtn(btn: UIButton) {
+        btn.backgroundColor = .HangBlue
+        btn.setTitleColor(.white, for: .normal)
+    }
+    
+    func deColorNextBtn(btn: UIButton) {
+        btn.backgroundColor = .BtnBackground
+        btn.setTitleColor(.HangGreyText, for: .normal)
+    }
+    
+    func makeTextFieldAndErrorLblRed(_ field: UITextField,
+                                     _ baseline: UIView,
+                                     _ errorLbl: UILabel) {
+        field.textColor = .FieldError
+        baseline.backgroundColor = .FieldError
+        errorLbl.isHidden = false
+    }
+    
+    func unMakeTextFieldAndErrorLblRed(_ field: UITextField,
+                                     _ baseline: UIView,
+                                     _ errorLbl: UILabel) {
+        field.textColor = .black
+        errorLbl.isHidden = true
+    }
+    
+    func loadJoinScreen() -> ChattingTogetherViewController? {
+        let storyboard = UIStoryboard(name: "Home", bundle: nil)
+        let viewController = storyboard.instantiateViewController(identifier: "chattingTogetherSID") as? ChattingTogetherViewController
+        return viewController
+    }
+    
+    func loadProfileScreen() -> ProfileViewController? {
+        let storyboard = UIStoryboard(name: "Profile", bundle: nil)
+        let viewController = storyboard.instantiateInitialViewController() as? ProfileViewController
+        return viewController
     }
     
     func checkNotification() {

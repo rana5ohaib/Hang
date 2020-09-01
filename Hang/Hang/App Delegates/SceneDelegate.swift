@@ -2,11 +2,12 @@
 //  SceneDelegate.swift
 //  Hang
 //
-//  Created by Devfactori II on 8/8/20.
+//  Created by Sohaib on 8/8/20.
 //  Copyright © 2020 Hang. All rights reserved.
 //
 
 import UIKit
+import SCSDKLoginKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -19,6 +20,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
     }
+    
+    func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
+    
+        guard let url = URLContexts.first?.url else {
+            return
+        }
+
+        SCSDKLoginClient.application( UIApplication.shared, open: url, options: nil)
+     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.
@@ -50,4 +60,3 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
 }
-
